@@ -1,4 +1,12 @@
 body {
-    background-color: black;
-    color: white;
+	background-color: #f2ad22;
+	background-image: url(Images/Background.jpg);
+	background-attachment: fixed;
+	background-size: 150%;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+	color: white;
+	margin: 0;
+	padding: 0;
 }
