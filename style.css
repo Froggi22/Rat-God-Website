@@ -1,12 +1,152 @@
+/*===== Whole document ======*/
+/*HTML*/
+html {
+	background: rgb(228,178,3);
+	background: linear-gradient(180deg, rgba(228,178,3,1) 0%, rgba(199,73,3,1) 100%) no-repeat;
+	height: 100%;
+	background-size: cover;
+}
+
+/*Body*/
 body {
-	background-color: #f2ad22;
-	background-image: url(Images/Background.jpg);
-	background-attachment: fixed;
-	background-size: 150%;
-	background-position: center;
-	background-repeat: no-repeat;
-	
 	color: white;
 	margin: 0;
 	padding: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+/*===== Navigation Bar ======*/
+
+/*Top navigation bar*/
+nav {
+	margin: 0;
+	padding: 0;
+	/*background-color: #231547; LUCAS*/ 
+	/*background-color: #2f2f9c; DANIEL*/
+	background: rgb(73,73,193);
+	background: linear-gradient(270deg, rgba(73,73,193,1) 0%, rgba(48,19,82,1) 100%);
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	/*border-bottom: 3px solid #896ec9; LUCAS*/
+	border-bottom: 3px solid #ffffff; /*DANIEL*/
+}
+
+/*Navigation bar list*/
+nav ul {
+	padding-top: 8px;
+	list-style-type: none;
+}
+
+/*Navigation bar list items*/
+nav ul div li {
+	display: inline;
+	margin-left: 30px;
+	font-size: 16px;
+	color: white;
+}
+
+/*Navigation bar left items*/
+.leftNav {
+	display: inline;
+	text-align: left;
+	margin-left: -30px;
+}
+
+.authorText {
+	font-weight: bold;
+}
+
+/*Navigation bar right items*/
+.rightNav {
+	display: inline;
+	text-align: right;
+	float: right;
+}
+
+/*Default link properties*/
+.defaultLink {
+	color: white;
+	text-decoration: none;
+}
+
+/*Default link properties on hover*/
+.defaultLink:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+/*Default link properties on visited*/
+.defaultLink:visited {
+	color: white;
+	text-decoration: none;
+}
+
+/*The invite Rat God link in navbar*/
+.coolBackgroundGold {
+	font-weight: bold;
+	padding: 15px 30px 15px 30px;
+	margin-right: 10px;
+	border-radius: 30px;
+	background: rgb(228,178,3);
+	background: linear-gradient(270deg, rgba(228,178,3,1) 0%, rgba(203,112,17,1) 100%);
+	
+}
+
+
+/*===== Header ======*/
+
+/*Header includes h1, h2, img & invite link*/
+header {
+	padding: 200px 0 0 50px;
+	height:max-content;
+}
+
+/*Rat God slogan*/
+header h2 {
+	margin-bottom: 70px;
+	font-weight: normal;
+}
+
+/*Same as gold but white obviously*/
+.coolBackgroundWhite {
+	margin-top: 30px;
+	font-weight: 600;
+	padding: 15px 30px 15px 30px;
+	margin-right: 10px;
+	border-radius: 30px;
+	color: black;
+	background: #ffffff;
+	text-decoration: none;
+}
+
+/*Custom hover properties*/
+.coolBackgroundWhite:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+/*Custom visited properties*/
+.coolBackgroundWhite:visited {
+	color: black;
+	text-decoration: underline;
+}
+
+/*The front page text; title, desc, invite link*/
+#headerPart1 {
+	display: inline;
+	padding-top: 75px;
+	position: absolute;
+	float: left;
+	height: 300px;
+}
+
+/*The most front page image showing Rat God*/
+#headerPart2 {
+	float: right;
+	display: inline;
+	margin-right: 200px;
+}
+
+
