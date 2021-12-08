@@ -1,9 +1,12 @@
 /*===== Whole document ======*/
 /*HTML*/
 html {
-	background: rgb(228,178,3);
-	background: linear-gradient(180deg, rgb(228, 179, 3) 0%, rgb(201,126,0) 100%) no-repeat;
-	height: 920px;
+	background: rgb(228,179,3);
+	background: -moz-linear-gradient(180deg, rgba(228,179,3,1) 0%, rgba(193,121,0,1) 100%);
+	background: -webkit-linear-gradient(180deg, rgba(228,179,3,1) 0%, rgba(193,121,0,1) 100%);
+	background: linear-gradient(180deg, rgba(228,179,3,1) 0%, rgba(193,121,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4b303",endColorstr="#c17900",GradientType=1);
+	height: 700px;
 	background-size: cover;
 }
 
@@ -20,17 +23,17 @@ body {
 
 /*Top navigation bar*/
 nav {
+	background: rgb(73,73,193);
+	background: -moz-linear-gradient(270deg, rgba(73,73,193,1) 0%, rgba(48,19,82,1) 100%);
+	background: -webkit-linear-gradient(270deg, rgba(73,73,193,1) 0%, rgba(48,19,82,1) 100%);
+	background: linear-gradient(270deg, rgba(73,73,193,1) 0%, rgba(48,19,82,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4949c1",endColorstr="#301352",GradientType=1);
 	margin: 0;
 	padding: 0;
-	/*background-color: #231547; LUCAS*/ 
-	/*background-color: #2f2f9c; DANIEL*/
-	background: rgb(73,73,193);
-	background: linear-gradient(270deg, rgb(73,73,193) 0%, rgb(48,19,82) 100%);
 	position: fixed;
 	width: 100%;
 	height: 70px;
-	/*border-bottom: 3px solid #896ec9; LUCAS*/
-	border-bottom: 3px solid #ffffff; /*DANIEL*/
+	border-bottom: 3px solid #ffffff;
 	z-index: 500;
 }
 
@@ -52,6 +55,7 @@ nav ul div li {
 .leftNav {
 	display: inline;
 	text-align: left;
+	float: left;
 	margin-left: -30px;
 }
 
@@ -64,6 +68,7 @@ nav ul div li {
 	display: inline;
 	text-align: right;
 	float: right;
+	margin-right: 30px;
 }
 
 /*Default & visited link properties*/
@@ -85,8 +90,10 @@ nav ul div li {
 	margin-right: 10px;
 	border-radius: 30px;
 	background: rgb(228,178,3);
-	background: linear-gradient(270deg, rgb(228,178,3) 0%, rgb(203,112,17) 100%);
-	
+	background: -moz-linear-gradient(270deg, rgba(228,178,3,1) 0%, rgba(203,112,17,1) 100%);
+	background: -webkit-linear-gradient(270deg, rgba(228,178,3,1) 0%, rgba(203,112,17,1) 100%);
+	background: linear-gradient(270deg, rgba(228,178,3,1) 0%, rgba(203,112,17,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4b203",endColorstr="#cb7011",GradientType=1);
 }
 
 
@@ -95,7 +102,7 @@ nav ul div li {
 /*Header includes h1, h2, img & invite link*/
 header {
 	position: relative;
-	padding: 200px 0 0 50px;
+	padding: 150px 0 0 50px;
 	height: max-content;
 }
 
@@ -150,10 +157,33 @@ header h2 {
 
 #features {
 	position: relative;
-	margin-top: 700px;
-	padding-top: 100px;
-	background: rgb(201,126,0);
+	margin-top: 500px;
+	background:rgb(21, 9, 36);
 	width: 100%;
 	height: 1000px;
+	padding: 100px 50px 0 50px;
+	/*text-align: center;*/
 }
+
+code {
+	background-color: #36393e;
+	padding: 2px;
+	border-radius: 3px;
+}
+
+
+/*===== FAQ ======*/
+#faq {
+	padding: 100px 50px 0 50px;
+	background:rgb(35, 15, 59);
+}
+
+
+
+/*===== Github ======*/
+
+
+
+
+/*===== Footer ======*/
 
