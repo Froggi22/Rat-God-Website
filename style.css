@@ -260,7 +260,7 @@ code {
 
 /*===== FAQ ======*/
 
-#faq {
+.faq {
 	padding: 50px;
 	background: #230f3b;
 }
@@ -269,7 +269,45 @@ h1:not(#headerPart1 h1) {
 	font-size: 30px;
 }
 
+.collapsible {
+	background-color: #36393e; /*#777*/
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	border-radius: 5px;
+	margin-bottom: 1px;
+}
 
+.active, .collapsible:hover {
+	background-color: #232527; /*#555*/
+}
+  
+.collapsible:after {
+	content: '\002B';
+	color: white;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+  
+.active:after {
+	content: "\2212";
+}
+  
+.content {
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background-color: #c79c00; /*f1f1f1*/
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
 
 /*===== Github ======*/
 
