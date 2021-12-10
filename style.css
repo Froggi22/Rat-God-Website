@@ -1,3 +1,59 @@
+/*===== Media ======*/
+
+/*
+	<425 x 710
+	Fix nav
+	Table under each other
+*/
+
+
+@media only screen and (min-width: 1022px) {
+	header {
+		padding: 150px 0 0 50px;
+	}
+	#headerPart1 {
+		float: left;
+	}
+	#headerPart2 {
+		float: right;
+		margin-bottom: 0;
+		margin-right: 200px;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	header {
+		padding: 150px 0 0 20px;
+	}
+	#headerPart1 {
+		float: none;
+	}
+	#headerPart2 {
+		float: none;
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	#headerPart2 img {
+		max-width: 200px;
+	}
+}
+
+@media only screen and (min-width: 361px) and (max-width: 1438px) {
+	#headerPart2 img {
+		max-width: 400px;
+	}
+}
+
+@media only screen and (min-width: 1439px) {
+	#headerPart2 img {
+		max-width: 600px;
+	}
+}
+
+
 /*===== Whole document ======*/
 
 /*Body*/
@@ -92,15 +148,13 @@ nav ul div li {
 /*Header includes h1, h2, img & invite link*/
 header {
 	position: relative;
-	padding: 150px 0 0 50px;
-	/*min-height: max-content;*/
+	/*padding: 150px 0 0 50px;*/
 	background: rgb(228,179,3);
 	background: -moz-linear-gradient(210deg, rgba(228,179,3,1) 0%, rgb(170, 108, 0) 100%);
 	background: -webkit-linear-gradient(210deg, rgba(228,179,3,1) 0%, rgba(170,108,0,1) 100%);
 	background: linear-gradient(210deg, rgba(228,179,3,1) 0%, rgba(170,108,0,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4b303",endColorstr="#c17900",GradientType=1);
 	min-height: 500px;
-	/*background-size: cover;*/
 	border-bottom: 2px solid white;
 }
 
@@ -136,29 +190,33 @@ header h2 {
 
 /*The front page text; title, desc, invite link*/
 #headerPart1 {
-	display: inline;
+	/*display: inline;*/
+	/*position: absolute;*/
 	padding-top: 75px;
-	position: absolute;
-	float: left;
+	/*float: left;*/
 	min-height: 300px;
 }
 
 /*The most front page image showing Rat God*/
-#headerPart2 {
-	float: right;
-	display: inline;
-	margin-right: 200px;
-}
+/*#headerPart2 {*/
+	/*display: inline;*/
+	/*float: right;*/
+	/*margin-right: 200px;*/
+/*}*/
 
 
 /*===== Features ======*/
 
 #features {
 	position: relative;
-	background:rgb(21, 9, 36);
 	width: auto;
 	padding: 50px;
 	border-bottom: 2px solid white;
+	background: rgb(21,9,36);
+	background: -moz-linear-gradient(90deg, rgba(21,9,36,1) 0%, rgba(36,13,65,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(21,9,36,1) 0%, rgba(36,13,65,1) 100%);
+	background: linear-gradient(90deg, rgba(21,9,36,1) 0%, rgba(36,13,65,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#150924",endColorstr="#240d41",GradientType=1);
 	/*text-align: center;*/
 }
 
@@ -171,7 +229,7 @@ header h2 {
 }
 
 .goldText {
-	color: rgb(228,178,3);
+	color: #e4b203;
 	text-decoration: none;
 }
 
@@ -199,10 +257,12 @@ code {
 	font-size: 14px;
 }
 
+
 /*===== FAQ ======*/
+
 #faq {
-	padding: 100px 50px 0 50px;
-	background:rgb(35, 15, 59);
+	padding: 50px;
+	background: #230f3b;
 }
 
 h1:not(#headerPart1 h1) {
