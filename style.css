@@ -7,7 +7,10 @@
 */
 
 
-@media only screen and (min-width: 1022px) {
+@media only screen and (min-width: 1100px) {
+	nav {
+		font-size: 16px;
+	}
 	header {
 		padding: 150px 0 0 50px;
 	}
@@ -21,7 +24,10 @@
 	}
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1099px) {
+	nav {
+		font-size: 14px;
+	}
 	header {
 		padding: 150px 0 0 20px;
 	}
@@ -41,6 +47,40 @@
 	}
 }
 
+@media only screen and (max-width: 800px) {
+	#leftNav {
+		display: block;
+	}
+	nav ul div li {
+		display: block;
+		margin-left: 5px;
+		margin-top: 5px;
+		text-align: left;
+	}
+	.coolBackgroundGold {
+		padding: 5px 10px 5px 10px;
+		margin-right: 0;
+		border-radius: 30px;
+		margin-bottom: 10px;
+	}
+}
+
+@media only screen and (min-width: 801px) {
+	#leftNav {
+		display: inline;
+	}
+	nav ul div li {
+		display: inline;
+		margin-left: 30px;
+	}
+	.coolBackgroundGold {
+		padding: 15px 30px 15px 30px;
+		margin-right: 10px;
+		border-radius: 30px;
+		margin-bottom: 0;
+	}
+}
+
 @media only screen and (min-width: 361px) and (max-width: 1438px) {
 	#headerPart2 img {
 		max-width: 400px;
@@ -56,6 +96,10 @@
 
 /*===== Whole document ======*/
 
+html {
+	scroll-behavior: smooth;
+}
+
 /*Body*/
 body {
 	color: white;
@@ -69,11 +113,12 @@ body {
 
 /*Top navigation bar*/
 nav {
-	background: rgb(73,73,193);
-	background: -moz-linear-gradient(270deg, rgba(73,73,193,1) 0%, rgba(48,19,82,1) 100%);
-	background: -webkit-linear-gradient(270deg, rgba(73,73,193,1) 0%, rgba(48,19,82,1) 100%);
-	background: linear-gradient(270deg, rgba(73,73,193,1) 0%, rgba(48,19,82,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4949c1",endColorstr="#301352",GradientType=1);
+	background: rgb(44,44,129);
+	background: -moz-linear-gradient(90deg, rgba(44,44,129,1) 0%, rgba(77,77,196,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(44,44,129,1) 0%, rgba(77,77,196,1) 100%);
+	background: linear-gradient(90deg, rgba(44,44,129,1) 0%, rgba(77,77,196,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c2c81",endColorstr="#4d4dc4",GradientType=1);
+
 	margin: 0;
 	padding: 0;
 	position: fixed;
@@ -91,15 +136,11 @@ nav ul {
 
 /*Navigation bar list items*/
 nav ul div li {
-	display: inline;
-	margin-left: 30px;
-	font-size: 16px;
 	color: white;
 }
 
 /*Navigation bar left items*/
 .leftNav {
-	display: inline;
 	text-align: left;
 	float: left;
 	margin-left: -30px;
@@ -131,15 +172,13 @@ nav ul div li {
 
 /*The invite Rat God link in navbar*/
 .coolBackgroundGold {
-	font-weight: bold;
-	padding: 15px 30px 15px 30px;
-	margin-right: 10px;
-	border-radius: 30px;
 	background: rgb(228,178,3);
 	background: -moz-linear-gradient(270deg, rgba(228,178,3,1) 0%, rgba(203,112,17,1) 100%);
 	background: -webkit-linear-gradient(270deg, rgba(228,178,3,1) 0%, rgba(203,112,17,1) 100%);
 	background: linear-gradient(270deg, rgba(228,178,3,1) 0%, rgba(203,112,17,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4b203",endColorstr="#cb7011",GradientType=1);
+
+	font-weight: bold;
 }
 
 
@@ -147,13 +186,13 @@ nav ul div li {
 
 /*Header includes h1, h2, img & invite link*/
 header {
-	position: relative;
-	/*padding: 150px 0 0 50px;*/
 	background: rgb(228,179,3);
 	background: -moz-linear-gradient(210deg, rgba(228,179,3,1) 0%, rgb(170, 108, 0) 100%);
 	background: -webkit-linear-gradient(210deg, rgba(228,179,3,1) 0%, rgba(170,108,0,1) 100%);
 	background: linear-gradient(210deg, rgba(228,179,3,1) 0%, rgba(170,108,0,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4b303",endColorstr="#c17900",GradientType=1);
+
+	position: relative;
 	min-height: 500px;
 	border-bottom: 2px solid white;
 }
@@ -164,7 +203,6 @@ header h2 {
 	font-weight: normal;
 }
 
-/*Same as gold but white obviously*/
 .coolBackgroundWhite {
 	margin-top: 30px;
 	font-weight: 600;
@@ -190,34 +228,37 @@ header h2 {
 
 /*The front page text; title, desc, invite link*/
 #headerPart1 {
-	/*display: inline;*/
-	/*position: absolute;*/
 	padding-top: 75px;
-	/*float: left;*/
 	min-height: 300px;
 }
-
-/*The most front page image showing Rat God*/
-/*#headerPart2 {*/
-	/*display: inline;*/
-	/*float: right;*/
-	/*margin-right: 200px;*/
-/*}*/
 
 
 /*===== Features ======*/
 
 #features {
+	background: rgb(21,21,66);
+	background: -moz-linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
+	background: linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#151542",endColorstr="#0a2338",GradientType=1);
+
 	position: relative;
 	width: auto;
 	padding: 50px;
 	border-bottom: 2px solid white;
-	background: rgb(21,9,36);
-	background: -moz-linear-gradient(90deg, rgba(21,9,36,1) 0%, rgba(36,13,65,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(21,9,36,1) 0%, rgba(36,13,65,1) 100%);
-	background: linear-gradient(90deg, rgba(21,9,36,1) 0%, rgba(36,13,65,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#150924",endColorstr="#240d41",GradientType=1);
-	/*text-align: center;*/
+}
+
+#features h1 {
+	text-align: center;
+}
+
+.ulDivParent {
+	text-align: center;
+}
+
+#features ul {
+	display: inline-block;
+	text-align: left;
 }
 
 #features table {
@@ -241,8 +282,22 @@ header h2 {
 	text-decoration: none;
 }
 
+.whiteLinkText {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.whiteLinkText:hover {
+	text-decoration: underline;
+}
+
+.whiteLinkText:visited {
+	text-decoration: none;
+}
+
 code {
-	background-color: #36393e;
+	background-color: #282b2e;
 	padding: 2px;
 	border-radius: 3px;
 	font-size: 14px;
@@ -250,7 +305,12 @@ code {
 }
 
 .codeblock {
-	background-color: #36393e;
+	background: rgb(40,43,46);
+	background: -moz-linear-gradient(180deg, rgba(40,43,46,1) 0%, rgba(29,31,33,1) 100%);
+	background: -webkit-linear-gradient(180deg, rgba(40,43,46,1) 0%, rgba(29,31,33,1) 100%);
+	background: linear-gradient(180deg, rgba(40,43,46,1) 0%, rgba(29,31,33,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#282b2e",endColorstr="#1d1f21",GradientType=1);
+
 	width: 100%;
 	padding: 5px;
 	border-radius: 10px;
@@ -260,9 +320,21 @@ code {
 
 /*===== FAQ ======*/
 
-.faq {
-	padding: 50px;
-	background: #230f3b;
+#faq {
+	background: rgb(32,32,87);
+	background: -moz-linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);
+	background: linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#202057",endColorstr="#133d60",GradientType=1);
+
+	padding: 50px 0;
+	width: 100%;
+	display: grid;
+	border-bottom: 2px solid white;
+}
+
+#faq h1 {
+	text-align: center;
 }
 
 h1:not(#headerPart1 h1) {
@@ -270,11 +342,17 @@ h1:not(#headerPart1 h1) {
 }
 
 .collapsible {
-	background-color: #36393e; /*#777*/
+	background: rgb(45,48,52);
+	background: -moz-linear-gradient(90deg, rgba(45,48,52,1) 0%, rgba(53,58,62,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(45,48,52,1) 0%, rgba(53,58,62,1) 100%);
+	background: linear-gradient(90deg, rgba(45,48,52,1) 0%, rgba(53,58,62,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d3034",endColorstr="#353a3e",GradientType=1);
+
+	width: 50%;
+	margin: auto;
 	color: white;
 	cursor: pointer;
 	padding: 18px;
-	width: 100%;
 	border: none;
 	text-align: left;
 	outline: none;
@@ -284,9 +362,9 @@ h1:not(#headerPart1 h1) {
 }
 
 .active, .collapsible:hover {
-	background-color: #232527; /*#555*/
+	background-color: #232527;
 }
-  
+
 .collapsible:after {
 	content: '\002B';
 	color: white;
@@ -294,25 +372,77 @@ h1:not(#headerPart1 h1) {
 	float: right;
 	margin-left: 5px;
 }
-  
+
 .active:after {
 	content: "\2212";
 }
-  
+
 .content {
+	background: rgb(228,178,3);
+	background: -moz-linear-gradient(270deg, rgba(228,178,3,1) 0%, rgba(203,112,17,1) 100%);
+	background: -webkit-linear-gradient(270deg, rgba(228,178,3,1) 0%, rgba(203,112,17,1) 100%);
+	background: linear-gradient(270deg, rgba(228,178,3,1) 0%, rgba(203,112,17,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4b203",endColorstr="#cb7011",GradientType=1);
+
 	padding: 0 18px;
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
-	background-color: #c79c00; /*f1f1f1*/
 	border-radius: 5px;
 	margin-bottom: 5px;
+	width: 50%;
+	margin: auto;
+	position: relative;
+	box-sizing: border-box;
 }
 
-/*===== Github ======*/
+.centeringContainer {
+	width: 100%;
+	display: grid;
+}
 
+.centeringContainer > * {
+	margin: 10px auto;
+}
 
+/*===== Contact Us ======*/
 
+#contact {
+	background: rgb(21,21,66);
+	background: -moz-linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
+	background: linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#151542",endColorstr="#0a2338",GradientType=1);
 
-/*===== Footer ======*/
+	width: 100%;
+	padding: 50px 0;
+	text-align: center;
+}
 
+#contact a {
+	margin: 20px 50px 100px 50px;
+}
+
+#contact a img {
+	width: 40px;
+	margin-bottom: 75px;
+}
+
+#contact a, #contact a:hover, #contact a:visited{
+	text-decoration: none;
+}
+
+#backTop {
+	background: rgb(64,64,68);
+	background: -moz-linear-gradient(90deg, rgba(64,64,68,1) 0%, rgba(63,69,74,1) 50%);
+	background: -webkit-linear-gradient(90deg, rgba(64,64,68,1) 0%, rgba(63,69,74,1) 50%);
+	background: linear-gradient(90deg, rgba(64,64,68,1) 0%, rgba(63,69,74,1) 50%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#404044",endColorstr="#3f454a",GradientType=1); 
+
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+}
