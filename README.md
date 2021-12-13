@@ -1,6 +1,6 @@
 # Rat God Website
 
-<img align="right" src="Images/Rat God.png" alt="Rat God" width="150" />
+<img align="right" src="Images/Rat_God.png" alt="Rat God" width="150" />
 
 [![License: GPL v3](https://badgen.net/badge/License/GPL%20v3/blue)](LICENSE)
 [![Discord](https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label)](https://discord.com/invite/kg7VfRQ9Xw)
