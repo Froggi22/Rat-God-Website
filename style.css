@@ -1,61 +1,24 @@
-/*===== Media ======*/
+/* ========== Media =========== */
 
-/*
-	<425 x 710
-	Fix nav
-	Table under each other
-*/
-
-
-@media only screen and (min-width: 1100px) {
-	nav {
-		font-size: 16px;
-	}
-	header {
-		padding: 150px 0 0 50px;
-	}
-	#headerPart1 {
-		float: left;
-	}
-	#headerPart2 {
-		float: right;
-		margin-bottom: 0;
-		margin-right: 200px;
-	}
-}
-
-@media only screen and (max-width: 1099px) {
-	nav {
-		font-size: 14px;
-	}
-	header {
-		padding: 150px 0 0 20px;
-	}
-	#headerPart1 {
-		float: none;
-	}
-	#headerPart2 {
-		float: none;
-		margin-bottom: 20px;
-		margin-right: 0;
-	}
-}
-
-@media only screen and (max-width: 360px) {
-	#headerPart2 img {
-		max-width: 200px;
-	}
-}
-
+/* Small screens, under 800px width */
 @media only screen and (max-width: 800px) {
-	#leftNav {
-		display: block;
+	.leftNav {
+		float: none;
+		margin-left: 0;
 	}
-	nav ul div li {
+	.rightNav {
+		float: none;
+		margin-right: 0;
+		display: grid;
+	}
+	nav ul li div {
+		text-align: center;
+	}
+	nav ul li div a {
 		display: block;
 		margin-left: 5px;
 		margin-top: 5px;
-		text-align: left;
+		font-size: 14px;
 	}
 	.coolBackgroundGold {
 		padding: 5px 10px 5px 10px;
@@ -63,44 +26,54 @@
 		border-radius: 30px;
 		margin-bottom: 10px;
 	}
+	header {
+		padding: 250px 150px 150px 150px;
+	}
+	iframe {
+		margin-bottom: 40px;
+	}
 }
 
+/* Average/large screens, above 800px width */
 @media only screen and (min-width: 801px) {
-	#leftNav {
+	.leftNav {
+		text-align: left;
+		float: left;
+		margin-left: -30px;
+	}
+	.rightNav {
+		text-align: left;
+		float: right;
+		margin-right: 30px;
 		display: inline;
 	}
-	nav ul div li {
+	nav ul li div a {
 		display: inline;
 		margin-left: 30px;
+		font-size: 16px;
 	}
 	.coolBackgroundGold {
 		padding: 15px 30px 15px 30px;
 		margin-right: 10px;
 		border-radius: 30px;
 		margin-bottom: 0;
+		text-align: center;
+	}
+	header {
+		padding: 150px;
+	}
+	iframe {
+		padding-bottom: 0;
 	}
 }
 
-@media only screen and (min-width: 361px) and (max-width: 1438px) {
-	#headerPart2 img {
-		max-width: 400px;
-	}
-}
-
-@media only screen and (min-width: 1439px) {
-	#headerPart2 img {
-		max-width: 600px;
-	}
-}
-
-
-/*===== Whole document ======*/
+/* ========== Whole document =========== */
 
 html {
 	scroll-behavior: smooth;
+	min-width: 400px;
 }
 
-/*Body*/
 body {
 	color: white;
 	margin: 0;
@@ -109,9 +82,8 @@ body {
 }
 
 
-/*===== Navigation Bar ======*/
+/* ========== Navigation Bar =========== */
 
-/*Top navigation bar*/
 nav {
 	background: rgb(44,44,129);
 	background: -moz-linear-gradient(90deg, rgba(44,44,129,1) 0%, rgba(77,77,196,1) 100%);
@@ -128,49 +100,45 @@ nav {
 	z-index: 500;
 }
 
-/*Navigation bar list*/
+/* Nav bar list */
 nav ul {
 	padding-top: 8px;
 	list-style-type: none;
 }
 
-/*Navigation bar list items*/
-nav ul div li {
+/* Nav bar list items */
+nav ul li div a {
 	color: white;
-}
-
-/*Navigation bar left items*/
-.leftNav {
-	text-align: left;
-	float: left;
-	margin-left: -30px;
 }
 
 .authorText {
 	font-weight: bold;
 }
 
-/*Navigation bar right items*/
-.rightNav {
-	display: inline;
-	text-align: right;
-	float: right;
-	margin-right: 30px;
+/* Turns the copyright symbol to copyleft */
+#copyleft {
+	display: inline-block;
+	margin: 0;
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: FlipH;
 }
 
-/*Default & visited link properties*/
+/* Default links properties */
 .defaultLink, .defaultLink:visited {
 	color: white;
 	text-decoration: none;
 }
 
-/*Default link properties on hover*/
+/* Default links properties on hover */
 .defaultLink:hover {
-	color: white;
 	text-decoration: underline;
 }
 
-/*The invite Rat God link in navbar*/
+/* The invite Rat God link in navbar */
 .coolBackgroundGold {
 	background: rgb(228,178,3);
 	background: -moz-linear-gradient(270deg, rgba(228,178,3,1) 0%, rgba(203,112,17,1) 100%);
@@ -179,12 +147,12 @@ nav ul div li {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4b203",endColorstr="#cb7011",GradientType=1);
 
 	font-weight: bold;
+	width: 100%;
 }
 
 
-/*===== Header ======*/
+/* =========== Header ============ */
 
-/*Header includes h1, h2, img & invite link*/
 header {
 	background: rgb(228,179,3);
 	background: -moz-linear-gradient(210deg, rgba(228,179,3,1) 0%, rgb(170, 108, 0) 100%);
@@ -192,48 +160,42 @@ header {
 	background: linear-gradient(210deg, rgba(228,179,3,1) 0%, rgba(170,108,0,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4b303",endColorstr="#c17900",GradientType=1);
 
-	position: relative;
 	min-height: 500px;
 	border-bottom: 2px solid white;
+	display: grid;
+	text-align: center;
 }
 
 /*Rat God slogan*/
-header h2 {
-	margin-bottom: 70px;
+#headerPart2 p {
+	font-size: 20px;
 	font-weight: normal;
+	padding-bottom: 20px;
 }
 
-.coolBackgroundWhite {
+/* The invite button on frontpage */
+.coolBackgroundWhite, .coolBackgroundWhite:visited {
+	background: #ffffff;
 	margin-top: 30px;
 	font-weight: 600;
 	padding: 15px 30px 15px 30px;
 	margin-right: 10px;
 	border-radius: 30px;
 	color: black;
-	background: #ffffff;
 	text-decoration: none;
 }
 
-/*Custom hover properties*/
+/* White link properties on hover */
 .coolBackgroundWhite:hover {
-	color: black;
 	text-decoration: underline;
 }
 
-/*Custom visited properties*/
-.coolBackgroundWhite:visited {
-	color: black;
-	text-decoration: underline;
+/* Header section except image */
+#headerPart2 {
+	margin-top: -60px;
 }
 
-/*The front page text; title, desc, invite link*/
-#headerPart1 {
-	padding-top: 75px;
-	min-height: 300px;
-}
-
-
-/*===== Features ======*/
+/* ========== Features =========== */
 
 #features {
 	background: rgb(21,21,66);
@@ -248,10 +210,11 @@ header h2 {
 	border-bottom: 2px solid white;
 }
 
-#features h1 {
+#features h2 {
 	text-align: center;
 }
 
+/* The general info section under title */
 .ulDivParent {
 	text-align: center;
 }
@@ -269,33 +232,30 @@ header h2 {
 	padding: 0 30px;
 }
 
-.goldText {
+/* Gold link text */
+.goldText, .goldText:visited {
 	color: #e4b203;
 	text-decoration: none;
 }
 
+/* Gold link text on hover */
 .goldText:hover {
 	text-decoration: underline;
 }
 
-.goldText:visited {
-	text-decoration: none;
-}
-
-.whiteLinkText {
+/* White link text */
+.whiteLinkText, .whiteLinkText:visited {
 	color: white;
 	font-weight: bold;
 	text-decoration: none;
 }
 
+/* White link text on hover */
 .whiteLinkText:hover {
 	text-decoration: underline;
 }
 
-.whiteLinkText:visited {
-	text-decoration: none;
-}
-
+/* Highlighted code commands */
 code {
 	background-color: #282b2e;
 	padding: 2px;
@@ -304,6 +264,7 @@ code {
 	line-height: 25px;
 }
 
+/* Highlighted codeblocks */
 .codeblock {
 	background: rgb(40,43,46);
 	background: -moz-linear-gradient(180deg, rgba(40,43,46,1) 0%, rgba(29,31,33,1) 100%);
@@ -318,7 +279,7 @@ code {
 }
 
 
-/*===== FAQ ======*/
+/* ========== FAQ =========== */
 
 #faq {
 	background: rgb(32,32,87);
@@ -333,14 +294,15 @@ code {
 	border-bottom: 2px solid white;
 }
 
-#faq h1 {
+#faq h2 {
 	text-align: center;
 }
 
-h1:not(#headerPart1 h1) {
+h2 {
 	font-size: 30px;
 }
 
+/* The question buttons */
 .collapsible {
 	background: rgb(45,48,52);
 	background: -moz-linear-gradient(90deg, rgba(45,48,52,1) 0%, rgba(53,58,62,1) 100%);
@@ -361,10 +323,12 @@ h1:not(#headerPart1 h1) {
 	margin-bottom: 1px;
 }
 
+/* Question buttons on hover */
 .active, .collapsible:hover {
 	background-color: #232527;
 }
 
+/* Question buttons when active/clicked */
 .collapsible:after {
 	content: '\002B';
 	color: white;
@@ -373,10 +337,12 @@ h1:not(#headerPart1 h1) {
 	margin-left: 5px;
 }
 
+/* Question buttons change symbol */
 .active:after {
 	content: "\2212";
 }
 
+/* Answer to questions */
 .content {
 	background: rgb(228,178,3);
 	background: -moz-linear-gradient(270deg, rgba(228,178,3,1) 0%, rgba(203,112,17,1) 100%);
@@ -396,16 +362,26 @@ h1:not(#headerPart1 h1) {
 	box-sizing: border-box;
 }
 
+/* Div around the video answer */
 .centeringContainer {
 	width: 100%;
 	display: grid;
 }
 
+/* Div around video answer, all children */
 .centeringContainer > * {
 	margin: 10px auto;
 }
 
-/*===== Contact Us ======*/
+/* The Youtube video */
+iframe {
+	border: 1px solid white;
+	width: 100%;
+	max-width: 560px;
+	max-height: 315px;
+}
+
+/* ========== Contact Us =========== */
 
 #contact {
 	background: rgb(21,21,66);
@@ -428,10 +404,12 @@ h1:not(#headerPart1 h1) {
 	margin-bottom: 75px;
 }
 
+/* No decoration for contact-images */
 #contact a, #contact a:hover, #contact a:visited{
 	text-decoration: none;
 }
 
+/* Back to top anchor link */
 #backTop {
 	background: rgb(64,64,68);
 	background: -moz-linear-gradient(90deg, rgba(64,64,68,1) 0%, rgba(63,69,74,1) 50%);
