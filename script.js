@@ -6,10 +6,10 @@ for (let i = 0; i < collapsible.length; i++) { // Iterate through all collapsibl
 	collapsible[i].addEventListener("click", function() { // Add click event listeners on each one
 		this.classList.toggle("active");
 		let content = this.nextElementSibling;
-		if (content.style.maxHeight){
+		if (content.style.maxHeight) {
 			content.style.maxHeight = null;
 		} else {
 			content.style.maxHeight = content.scrollHeight + "px";
-		} 
+		}
 	});
 }

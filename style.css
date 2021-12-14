@@ -429,7 +429,7 @@ iframe {
 	background: -moz-linear-gradient(90deg, rgba(64,64,68,1) 0%, rgba(63,69,74,1) 50%);
 	background: -webkit-linear-gradient(90deg, rgba(64,64,68,1) 0%, rgba(63,69,74,1) 50%);
 	background: linear-gradient(90deg, rgba(64,64,68,1) 0%, rgba(63,69,74,1) 50%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#404044",endColorstr="#3f454a",GradientType=1); 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#404044",endColorstr="#3f454a",GradientType=1);
 
 	color: white;
 	padding: 5px;
