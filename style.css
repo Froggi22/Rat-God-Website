@@ -11,6 +11,9 @@
 		margin-right: 0;
 		display: grid;
 	}
+	nav ul {
+		margin-left: -20px;
+	}
 	nav ul li div {
 		text-align: center;
 	}
@@ -26,8 +29,14 @@
 		border-radius: 30px;
 		margin-bottom: 10px;
 	}
+	#copyleft {
+		margin: 0;
+	}
 	header {
-		padding: 250px 150px 150px 150px;
+		padding: 250px 0 150px 0;
+	}
+	#headerPart1 img {
+		width: 200px;
 	}
 	iframe {
 		margin-bottom: 40px;
@@ -59,8 +68,14 @@
 		margin-bottom: 0;
 		text-align: center;
 	}
+	#copyleft {
+		margin: 0 0 0 20px;
+	}
 	header {
-		padding: 150px;
+		padding: 150px 0;
+	}
+	#headerPart1 img {
+		width: 300px;
 	}
 	iframe {
 		padding-bottom: 0;
@@ -118,7 +133,6 @@ nav ul li div a {
 /* Turns the copyright symbol to copyleft */
 #copyleft {
 	display: inline-block;
-	margin: 0 0 0 20px;
 	-moz-transform: scaleX(-1);
 	-o-transform: scaleX(-1);
 	-webkit-transform: scaleX(-1);
@@ -166,6 +180,11 @@ header {
 	text-align: center;
 }
 
+/* Header section except image */
+#headerPart2 {
+	margin-top: -60px;
+}
+
 /*Rat God slogan*/
 #headerPart2 p {
 	font-size: 20px;
@@ -188,11 +207,6 @@ header {
 /* White link properties on hover */
 .coolBackgroundWhite:hover {
 	text-decoration: underline;
-}
-
-/* Header section except image */
-#headerPart2 {
-	margin-top: -60px;
 }
 
 /* ========== Features =========== */
