@@ -1,6 +1,6 @@
 # Rat God Website
 
-<img align="right" src="Images/Rat_God.png" alt="Rat God" width="150" />
+<img align="right" src="Images/RG_Christmas.png" alt="Rat God" width="150" />
 
 [![License: GPL v3](https://badgen.net/badge/License/GPL%20v3/blue)](LICENSE)
 [![Discord](https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label)](https://discord.com/invite/kg7VfRQ9Xw)
@@ -22,7 +22,7 @@ This is the source code for Rat God's website, a Discord bot that will help you 
 
 ### General Information
 
-- The code is licensed under GPLv3. [Read more about what you can and cannot do with the code](https://en.wikipedia.org/wiki/GNU_General_Public_License).
+- The code is licensed under GPLv3; [Read more](LICENSE).
 - Indentation: Tabs.
 - Commit titles are named using the [Calver](https://calver.org/) scheme YYYY.0M.0D.MICRO.
   - Example: `2021.12.07.0`.
