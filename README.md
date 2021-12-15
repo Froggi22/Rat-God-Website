@@ -22,7 +22,7 @@ This is the source code for Rat God's website, a Discord bot that will help you 
 
 ### General Information
 
-- The code is licensed under GPLv3; [Read more](LICENSE).
+- This code is distributed under the terms of the [GNU General Public License, v3](LICENSE).
 - Indentation: Tabs.
 - Commit titles are named using the [Calver](https://calver.org/) scheme YYYY.0M.0D.MICRO.
   - Example: `2021.12.07.0`.
