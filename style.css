@@ -168,11 +168,11 @@ nav ul li div a {
 /* =========== Header ============ */
 
 header {
-	background: rgb(228,179,3);
-	background: -moz-linear-gradient(210deg, rgba(228,179,3,1) 0%, rgb(170, 108, 0) 100%);
-	background: -webkit-linear-gradient(210deg, rgba(228,179,3,1) 0%, rgba(170,108,0,1) 100%);
-	background: linear-gradient(210deg, rgba(228,179,3,1) 0%, rgba(170,108,0,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4b303",endColorstr="#c17900",GradientType=1);
+	background: rgb(227,156,26);
+	background: -moz-linear-gradient(210deg, rgba(227,156,26,1) 0%, rgba(158,75,19,1) 100%);
+	background: -webkit-linear-gradient(210deg, rgba(227,156,26,1) 0%, rgba(158,75,19,1) 100%);
+	background: linear-gradient(210deg, rgba(227,156,26,1) 0%, rgba(158,75,19,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e39c1a",endColorstr="#9e4b13",GradientType=1);
 
 	min-height: 500px;
 	border-bottom: 2px solid white;
