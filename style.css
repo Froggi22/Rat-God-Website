@@ -196,7 +196,7 @@ header {
 .coolBackgroundWhite, .coolBackgroundWhite:visited {
 	background: #ffffff;
 	margin-top: 30px;
-	font-weight: 600;
+	font-weight: bold;
 	padding: 15px 30px 15px 30px;
 	margin-right: 10px;
 	border-radius: 30px;
@@ -335,7 +335,7 @@ h2 {
 	outline: none;
 	font-size: 15px;
 	border-radius: 5px;
-	margin-bottom: 1px;
+	border: 1px solid black;
 }
 
 /* Question buttons on hover */
@@ -370,9 +370,8 @@ h2 {
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
 	border-radius: 5px;
-	margin-bottom: 5px;
+	margin: auto auto 8px auto;
 	width: 50%;
-	margin: auto;
 	position: relative;
 	box-sizing: border-box;
 }
