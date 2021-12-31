@@ -130,6 +130,10 @@ nav ul li div a {
 	font-weight: bold;
 }
 
+.authorText a {
+	font-weight: normal;
+}
+
 /* Turns the copyright symbol to copyleft */
 #copyleft {
 	display: inline-block;
@@ -209,14 +213,39 @@ header {
 	text-decoration: underline;
 }
 
-/* ========== Features =========== */
+/* ========== Description =========== */
 
-#features {
+#description {
 	background: rgb(21,21,66);
 	background: -moz-linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
 	background: -webkit-linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
 	background: linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#151542",endColorstr="#0a2338",GradientType=1);
+
+	position: relative;
+	width: auto;
+	padding: 50px;
+	border-bottom: 2px solid white;
+}
+
+#description h2 {
+	text-align: center;
+}
+
+#description p {
+	text-align: justify;
+	max-width: 750px;
+	margin: auto;
+}
+
+/* ========== Features =========== */
+
+#features {
+	background: rgb(32,32,87);
+	background: -moz-linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);
+	background: linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#202057",endColorstr="#133d60",GradientType=1);
 
 	position: relative;
 	width: auto;
@@ -297,11 +326,11 @@ code {
 /* ========== FAQ =========== */
 
 #faq {
-	background: rgb(32,32,87);
-	background: -moz-linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);
-	background: linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#202057",endColorstr="#133d60",GradientType=1);
+	background: rgb(21,21,66);
+	background: -moz-linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
+	background: linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#151542",endColorstr="#0a2338",GradientType=1);
 
 	padding: 50px 0;
 	width: 100%;
@@ -398,11 +427,11 @@ iframe {
 /* ========== Contact Us =========== */
 
 #contact {
-	background: rgb(21,21,66);
-	background: -moz-linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
-	background: linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#151542",endColorstr="#0a2338",GradientType=1);
+	background: rgb(32,32,87);
+	background: -moz-linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);
+	background: linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#202057",endColorstr="#133d60",GradientType=1);
 
 	width: 100%;
 	padding: 50px 0;
