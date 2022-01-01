@@ -10,13 +10,15 @@ This is the source code for Rat God's website, a Discord bot that will help you 
 
 - [Website](https://rat-god-website.herokuapp.com/)
 - [Support Discord Server](https://discord.com/invite/kg7VfRQ9Xw) *<-- Highly recommend to join!*
-- [Bot repository](https://github.com/Froggi22/Rat-God)
+- [Bot's repository](https://github.com/Froggi22/Rat-God)
 
 ## Table of contents
 
 - [Contributing](#contributing)
 
 - - -
+
+For a description and features about the bot - see the [bot's repository](https://github.com/Froggi22/Rat-God).
 
 ## Contributing
 
