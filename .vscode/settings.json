@@ -1,5 +1,7 @@
 {
     "editor.wordWrap": "on",
     "editor.comments.insertSpace": false,
-    "editor.insertSpaces": false
+	"editor.insertSpaces": false,	
+	"editor.detectIndentation": false,
+	"files.trimTrailingWhitespace": true
 }
