@@ -213,9 +213,9 @@ header {
 	text-decoration: underline;
 }
 
-/* ========== Description =========== */
+/* ========== About =========== */
 
-#description {
+#about {
 	background: rgb(21,21,66);
 	background: -moz-linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
 	background: -webkit-linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
@@ -228,11 +228,11 @@ header {
 	border-bottom: 2px solid white;
 }
 
-#description h2 {
+#about h2 {
 	text-align: center;
 }
 
-#description p {
+#about p {
 	text-align: justify;
 	max-width: 750px;
 	margin: auto;
