@@ -7,8 +7,8 @@
 </p>
 <p align="center">
 	<a href="LICENSE"><img src="https://badgen.net/badge/License/GPL%20v3/blue" alt="License GPL v3" /></a>
-	<a href="https://discord.com/invite/kg7VfRQ9Xw"><img src="https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label" alt="Discord" /></a>
-	<a href="https://rat-god-website.herokuapp.com/"><img src="https://img.shields.io/website?url=https://rat-god-website.herokuapp.com/" /></a>
+	<a href="https://discord.com/invite/kg7VfRQ9Xw"><img src="https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label" alt="Discord Server" /></a>
+	<a href="https://rat-god-website.herokuapp.com/"><img src="https://img.shields.io/website?url=https://rat-god-website.herokuapp.com/" alt="Refresh for website status" /></a>
 </p>
 
 - - -
@@ -44,7 +44,7 @@ For a description and features about the bot - see the [bot's repository](https:
 
 ### Setup
 
-1. Clone me where you keep your Github projects: `git clone https://github.com/Froggi22/Rat-God-Website.git`
+1. Clone me where you keep your Github projects: `git clone https://github.com/Froggi22/Rat-God-Website.git`.
 2. Navigate to the project folder: `cd Rat-God-Website`.
 3. Open the HTML in you favorite browser. 🎉
 
