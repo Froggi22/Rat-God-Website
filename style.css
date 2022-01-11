@@ -452,6 +452,22 @@ h2 {
 	text-decoration: none;
 }
 
+#discord {
+	filter: brightness(100);
+}
+
+#discord:hover {
+	filter: brightness(1);
+}
+
+#github {
+	filter: invert(0%);
+}
+
+#github:hover {
+	filter: invert(100%);
+}
+
 /* Back to top anchor link */
 #backTop {
 	background: rgb(45,45,47);
