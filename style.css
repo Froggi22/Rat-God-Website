@@ -453,19 +453,15 @@ h2 {
 }
 
 #discord {
-	filter: brightness(100);
+	filter: brightness(100); /* White */
 }
 
 #discord:hover {
-	filter: brightness(1);
-}
-
-#github {
-	filter: invert(0%);
+	filter: brightness(1); /* Blue */
 }
 
 #github:hover {
-	filter: invert(100%);
+	filter: invert(100%);  /* Black */
 }
 
 /* Back to top anchor link */
