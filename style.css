@@ -448,20 +448,28 @@ h2 {
 }
 
 /* No decoration for contact-images */
-#contact a, #contact a:hover, #contact a:visited{
+#contact a:not(#backTop), #contact a:hover:not(#backTop), #contact a:visited:not(#backTop) {
 	text-decoration: none;
 }
 
 #discord {
-	filter: brightness(100); /* White */
+	filter: brightness(3); /* White */
+	transition: filter 0.2s;
 }
 
 #discord:hover {
 	filter: brightness(1); /* Blue */
+	transition: filter 0.2s;
+}
+
+#github {
+	filter: invert(0);  /* White */
+	transition: filter 0.2s;
 }
 
 #github:hover {
-	filter: invert(100%);  /* Black */
+	filter: invert(1);  /* Black */
+	transition: filter 0.2s;
 }
 
 /* Back to top anchor link */
@@ -472,11 +480,9 @@ h2 {
 	background: linear-gradient(90deg, rgba(45,45,47,1) 0%, rgba(55,59,62,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d2d2f",endColorstr="#373b3e",GradientType=1);
 
-	color: white;
 	padding: 5px;
 	border-radius: 5px;
 	text-align: center;
-	text-decoration: none;
 	font-weight: bold;
 	border: 2px solid black;
 }
