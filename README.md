@@ -31,6 +31,7 @@ For a description and features about the bot - see the [bot's repository](https:
 - [Support Discord Server](https://discord.com/invite/kg7VfRQ9Xw) *<-- Highly recommend to join!*
 - [Website](https://rat-god-website.herokuapp.com/)
 - [Bot's repository](https://github.com/Froggi22/Rat-God)
+- Vote on [Top.gg](https://top.gg/bot/864572952275714059/vote)
 
 ## Contributing
 
