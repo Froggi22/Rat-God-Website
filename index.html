@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,8 +9,8 @@
 	<link rel="shortcut icon" href="assets/Favicon.ico" />
 	<title>Rat God</title>
 	<meta name="description" content="An open source Discord bot that helps you in the game Escape From Tarkov!" />
-	<meta name="keywords" content="Escape From Tarkov, Tarkov, Discord Bot, Discord, Github, Ammunition, Ammo, Maps">
-	<meta name="author" content="Froggi22">
+	<meta name="keywords" content="Escape From Tarkov, Tarkov, Discord Bot, Discord, Github, Ammunition, Ammo, Maps" />
+	<meta name="author" content="Froggi22" />
 </head>
 
 <body>
@@ -19,7 +20,7 @@
 			<li>
 				<div class="leftNav authorText">
 					<span id="copyleft">&copy;</span> Froggi22
-					<a href="https://discord.com/invite/kg7VfRQ9Xw" class="defaultLink" target="_blank">Support</a>
+					<a class="defaultLink discordInviteLink" target="_blank">Support</a>
 				</div>
 			</li>
 			<li>
@@ -28,7 +29,7 @@
 					<a href="#features" class="defaultLink">Features</a>
 					<a href="#faq" class="defaultLink">FAQ</a>
 					<a href="#contact" class="defaultLink">Contact Us</a>
-					<a href="https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=2147600448&scope=bot%20applications.commands" class="defaultLink" target="_blank"><span class="coolBackgroundGold">Invite Rat God</span></a>
+					<a class="defaultLink botInviteLink" target="_blank"><span class="coolBackgroundGold">Invite Rat God</span></a>
 				</div>
 			</li>
 		</ul>
@@ -37,14 +38,14 @@
 	<!-- Header -->
 	<header>
 		<div id="headerPart1"> <!-- Frontpage image -->
-			<a href="https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=2147600448&scope=bot%20applications.commands" target="_blank">
+			<a target="_blank" class="botInviteLink">
 				<img src="assets/RG.png" alt="Rat God" />
 			</a>
 		</div>
 		<div id="headerPart2">
 			<h1>Rat God</h1>
 			<p>Fast access to in-game Tarkov information.</p>
-			<a href="https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=2147600448&scope=bot%20applications.commands" class="defaultLink coolBackgroundWhite" target="_blank">Invite</a>
+			<a class="defaultLink coolBackgroundWhite botInviteLink" target="_blank">Invite</a>
 		</div>
 	</header>
 
@@ -61,7 +62,6 @@
 		</p>
 	</section>
 
-
 	<!-- Features -->
 	<section id="features">
 		<h2>Features</h2>
@@ -69,8 +69,8 @@
 			<ul>
 				<li>Rat God uses <strong>Slash commands</strong> - Prefix: <code>/</code>.</li>
 				<li>Auto-complete choices, so you don't have to remember any by heart!</li>
-				<li>To get a list of <strong>all</strong> commands type <code>/Commands</code>.</li>
-				<li>Click <a href="https://discord.com/invite/kg7VfRQ9Xw" target="_blank" class="goldText"><strong>here</strong></a> or type <code>/Support</code> to head over to the Discord Support Server.</li>
+				<li>To get a list of <strong>all</strong> commands type <code>/commands</code>.</li>
+				<li>Click <a target="_blank" class="goldText discordInviteLink"><strong>here</strong></a> or type <code>/support</code> to head over to the Discord Support Server.</li>
 			</ul>
 		</div>
 
@@ -150,7 +150,7 @@
 			Where can I test out the bot and get in contact with you?
 		</button>
 		<div class="content"> <!-- A1 -->
-			<p>There is a Discord Support Server for just this. Click <a href="https://discord.com/invite/kg7VfRQ9Xw" target="_blank" class="whiteLinkText"><strong>here</strong></a> to join!</p>
+			<p>There is a Discord Support Server for just this. Click <a target="_blank" class="whiteLinkText discordInviteLink"><strong>here</strong></a> to join!</p>
 		</div>
 
 		<button class="collapsible"> <!-- Q2 -->
@@ -183,7 +183,7 @@
 	<section id="contact">
 		<h2>Get In Touch</h2>
 
-		<a href="https://discord.com/invite/kg7VfRQ9Xw" target="_blank">
+		<a target="_blank" class="discordInviteLink">
 			<img src="assets/Discord.png" alt="Discord" id="discord" title="Join the Rat God community on Discord" />
 		</a>
 
@@ -192,7 +192,7 @@
 		</a>
 		<br />
 		<a href="#top" class="defaultLink" id="backTop">Back To Top</a>
-		<p>Updated 2021-01-16</p>
+		<p>Updated 2021-01-21</p>
 	</section>
 
 	<script src="script.js"></script>

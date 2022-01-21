@@ -82,6 +82,7 @@
 	}
 }
 
+
 /* ========== Whole document =========== */
 
 html {
@@ -213,6 +214,7 @@ header {
 	text-decoration: underline;
 }
 
+
 /* ========== About =========== */
 
 #about {
@@ -237,6 +239,7 @@ header {
 	max-width: 750px;
 	margin: auto;
 }
+
 
 /* ========== Features =========== */
 
@@ -423,6 +426,7 @@ h2 {
 	max-width: 560px;
 	max-height: 315px;
 }
+
 
 /* ========== Contact Us =========== */
 
