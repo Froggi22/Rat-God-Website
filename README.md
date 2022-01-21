@@ -39,13 +39,12 @@ For a description and features about the bot - see the [bot's repository](https:
 ### Prerequisites
 
 - This code is distributed under the terms of the [GNU General Public License, v3](LICENSE). Read and understand it.
-- Have a [Discord application](https://discord.com/developers/applications) ("Bot").
 
 ### Setup
 
 1. Clone me where you keep your Github projects: `git clone https://github.com/Froggi22/Rat-God-Website.git`.
 2. Navigate to the project folder: `cd Rat-God-Website`.
-3. Open the HTML in you favorite browser. 🎉
+3. Open the .html in you favorite browser. 🎉
 
 ### Submit a Pull Request
 
