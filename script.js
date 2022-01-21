@@ -2,7 +2,7 @@
 
 /* ===== Variables / Links ===== */
 const discordInviteLink = "https://discord.com/invite/kg7VfRQ9Xw";
-const botInviteLink = "https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=2147600448&scope=bot%20applications.commands";
+const botInviteLink = "https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=274878023744&scope=bot%20applications.commands";
 const tarkovWikiLink = "https://escapefromtarkov.fandom.com/wiki/Escape_from_Tarkov_Wiki";
 const githubRatGodLink = "https://github.com/Froggi22/Rat-God";
 
