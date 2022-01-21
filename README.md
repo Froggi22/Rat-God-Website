@@ -5,6 +5,7 @@
 <p align="center">
 	A Discord bot to help you in Escape From Tarkov!
 </p>
+
 <p align="center">
 	<a href="LICENSE"><img src="https://badgen.net/badge/License/GPL%20v3/blue" alt="License GPL v3" /></a>
 	<a href="https://discord.com/invite/kg7VfRQ9Xw"><img src="https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label" alt="Discord Server" /></a>
@@ -39,9 +40,6 @@ For a description and features about the bot - see the [bot's repository](https:
 
 - This code is distributed under the terms of the [GNU General Public License, v3](LICENSE). Read and understand it.
 - Have a [Discord application](https://discord.com/developers/applications) ("Bot").
-- Using commit titles named using the [Calver](https://calver.org/) scheme YYYY.0M.0D.MICRO.
-  - Example: `2021.12.07.0`.
-  - Explanation: The first commit on the 7th of December 2021.
 
 ### Setup
 
@@ -59,7 +57,7 @@ For a description and features about the bot - see the [bot's repository](https:
 
 ```txt
 git add <changed-files...>
-git commit -m "YYYY.0M.0D.MICRO" -m "Description of changes"
+git commit -m "Cool new feature" -m "Description of changes"
 git push origin <awesome-new-feature-name>
 ```
 
@@ -75,4 +73,4 @@ git push origin <awesome-new-feature-name>
 
 - `.gitignore` - Used for ignoring files from Git.
 - `composer.json` & `index.php` - For Heroku - the bot's hosting platform.
-- `README.md` - Documentation.
+- `README.md` - The documentation you're reading right now.

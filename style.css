@@ -1,71 +1,75 @@
 /* ========== Media =========== */
 
-/* Small screens, under 800px width */
+/* Small screens */
 @media only screen and (max-width: 800px) {
 	.leftNav {
 		float: none;
-		margin-left: 0;
 	}
 	.rightNav {
 		float: none;
-		margin-right: 0;
-		display: grid;
 	}
 	nav ul {
-		margin-left: -20px;
-	}
-	nav ul li div {
+		align-items: center;
+		display: flex;
+		padding: 0;
 		text-align: center;
+		justify-content: center;
 	}
 	nav ul li div a {
 		display: block;
+		font-size: 14px;
 		margin-left: 5px;
 		margin-top: 5px;
-		font-size: 14px;
+	}
+	nav ul li > div {
+		width: max-content;
 	}
 	.coolBackgroundGold {
-		padding: 5px 10px 5px 10px;
-		margin-right: 0;
 		border-radius: 30px;
+		margin-right: 0;
 		margin-bottom: 10px;
+		padding: 5px 10px 5px 10px;
 	}
 	#copyleft {
 		margin: 0;
 	}
 	header {
-		padding: 250px 0 150px 0;
+		padding: 200px 0 100px 0;
 	}
 	#headerPart1 img {
 		width: 200px;
 	}
-	#ytVideo {
+	#about, #features, #faq, #contact {
+		scroll-margin-top: 100px;
+	}
+	#youtubeVideo {
 		margin-bottom: 40px;
 	}
 }
 
-/* Average/large screens, above 800px width */
+/* Average/large screens */
 @media only screen and (min-width: 801px) {
 	.leftNav {
-		text-align: left;
 		float: left;
 		margin-left: -30px;
+		text-align: left;
 	}
 	.rightNav {
-		text-align: left;
+		display: inline;
 		float: right;
 		margin-right: 30px;
-		display: inline;
+		text-align: left;
 	}
 	nav ul li div a {
 		display: inline;
-		margin-left: 30px;
 		font-size: 16px;
+		margin-left: 30px;
 	}
 	.coolBackgroundGold {
-		padding: 15px 30px 15px 30px;
-		margin-right: 10px;
 		border-radius: 30px;
 		margin-bottom: 0;
+		margin-right: 10px;
+		padding: 15px 30px 15px 30px;
 		text-align: center;
 	}
 	#copyleft {
@@ -77,6 +81,9 @@
 	#headerPart1 img {
 		width: 300px;
 	}
+	#about, #features, #faq, #contact {
+		scroll-margin-top: 50px;
+	}
 	#ytVideo {
 		padding-bottom: 0;
 	}
@@ -86,15 +93,27 @@
 /* ========== Whole document =========== */
 
 html {
-	scroll-behavior: smooth;
+	cursor: auto;
 	min-width: 400px;
+	scroll-behavior: smooth;
 }
 
 body {
 	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	margin: 0;
 	padding: 0;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header, #about, #features, #faq, #contact {
+	border-bottom: 2px solid white;
+	position: relative;
+	text-align: center;
+	width: auto;
+}
+
+#about, #features, #faq, #contact {
+	padding: 50px;
 }
 
 
@@ -107,19 +126,19 @@ nav {
 	background: linear-gradient(90deg, rgba(44,44,129,1) 0%, rgba(77,77,196,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c2c81",endColorstr="#4d4dc4",GradientType=1);
 
+	border-bottom: 3px solid #ffffff;
 	margin: 0;
 	padding: 0;
 	position: fixed;
-	width: 100%;
 	min-height: 70px;
-	border-bottom: 3px solid #ffffff;
+	width: 100%;
 	z-index: 500;
 }
 
 /* Nav bar list */
 nav ul {
-	padding-top: 8px;
 	list-style-type: none;
+	padding-top: 8px;
 }
 
 /* Nav bar list items */
@@ -180,9 +199,7 @@ header {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e39c1a",endColorstr="#9e4b13",GradientType=1);
 
 	min-height: 500px;
-	border-bottom: 2px solid white;
 	display: grid;
-	text-align: center;
 }
 
 /* Header section except image */
@@ -200,12 +217,12 @@ header {
 /* The invite button on frontpage */
 .coolBackgroundWhite, .coolBackgroundWhite:visited {
 	background: #ffffff;
-	margin-top: 30px;
-	font-weight: bold;
-	padding: 15px 30px 15px 30px;
-	margin-right: 10px;
 	border-radius: 30px;
 	color: black;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-right: 10px;
+	padding: 15px 30px 15px 30px;
 	text-decoration: none;
 }
 
@@ -224,20 +241,17 @@ header {
 	background: linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#151542",endColorstr="#0a2338",GradientType=1);
 
-	position: relative;
-	width: auto;
-	padding: 50px;
 	border-bottom: 2px solid white;
-}
-
-#about h2 {
+	padding: 50px;
+	position: relative;
 	text-align: center;
+	width: auto;
 }
 
 #about p {
-	text-align: justify;
-	max-width: 750px;
 	margin: auto;
+	max-width: 750px;
+	text-align: justify;
 }
 
 
@@ -249,15 +263,6 @@ header {
 	background: -webkit-linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);
 	background: linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#202057",endColorstr="#133d60",GradientType=1);
-
-	position: relative;
-	width: auto;
-	padding: 50px;
-	border-bottom: 2px solid white;
-}
-
-#features h2 {
-	text-align: center;
 }
 
 /* The general info section under title */
@@ -272,10 +277,12 @@ header {
 
 #features table {
 	margin: 0 auto;
+	text-align: left;
 }
 
 #features table tr td {
 	padding: 0 30px;
+	vertical-align: top;
 }
 
 /* Gold link text */
@@ -304,10 +311,10 @@ header {
 /* Highlighted code commands */
 code {
 	background-color: #282b2e;
-	padding: 2px;
 	border-radius: 3px;
 	font-size: 14px;
 	line-height: 25px;
+	padding: 2px;
 }
 
 /* Highlighted codeblocks */
@@ -318,11 +325,11 @@ code {
 	background: linear-gradient(180deg, rgba(40,43,46,1) 0%, rgba(29,31,33,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#282b2e",endColorstr="#1d1f21",GradientType=1);
 
-	width: 100%;
-	padding: 5px;
+	border: 1px solid black;
 	border-radius: 10px;
 	font-size: 14px;
-	border: 1px solid black
+	padding: 5px;
+	width: 100%;
 }
 
 
@@ -335,47 +342,49 @@ code {
 	background: linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#151542",endColorstr="#0a2338",GradientType=1);
 
-	padding: 50px 0;
-	width: 100%;
-	display: grid;
 	border-bottom: 2px solid white;
-}
-
-#faq h2 {
+	display: grid;
+	padding: 50px 0;
 	text-align: center;
+	width: 100%;
 }
 
 h2 {
 	font-size: 30px;
 }
 
+#faqContainer {
+	margin: auto;
+	width: 50%;
+}
+
 /* The question buttons */
 .collapsible {
-	background: rgb(45,48,52);
-	background: -moz-linear-gradient(90deg, rgba(45,48,52,1) 0%, rgba(53,58,62,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(45,48,52,1) 0%, rgba(53,58,62,1) 100%);
-	background: linear-gradient(90deg, rgba(45,48,52,1) 0%, rgba(53,58,62,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d3034",endColorstr="#353a3e",GradientType=1);
-
-	width: 50%;
-	margin: auto;
+	background-color: #2f3a52;
+	border: none;
+	border-radius: 5px;
 	color: white;
 	cursor: pointer;
-	padding: 18px;
-	border: none;
-	text-align: left;
-	outline: none;
 	font-size: 15px;
-	border-radius: 5px;
-	border: 1px solid black;
+	font-weight: bold;
+	outline: none;
+	padding: 18px;
+	text-align: left;
+	transition: border-radius 0.2s;
+	width: 100%;
 }
 
 /* Question buttons on hover */
-.active, .collapsible:hover {
-	background-color: #232527;
+.collapsible:hover {
+	background-color: #262e41;
 }
 
-/* Question buttons when active/clicked */
+.active {
+	background-color: #262e41;
+	border-radius: 5px 5px 0 0;
+}
+
+/* The plus/minus on each button containing a question */
 .collapsible:after {
 	content: '\002B';
 	color: white;
@@ -391,21 +400,19 @@ h2 {
 
 /* Answer to questions */
 .content {
-	background: rgb(228,178,3);
-	background: -moz-linear-gradient(270deg, rgba(228,178,3,1) 0%, rgba(203,112,17,1) 100%);
-	background: -webkit-linear-gradient(270deg, rgba(228,178,3,1) 0%, rgba(203,112,17,1) 100%);
-	background: linear-gradient(270deg, rgba(228,178,3,1) 0%, rgba(203,112,17,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4b203",endColorstr="#cb7011",GradientType=1);
+	background-color: #262e41;
 
 	padding: 0 18px;
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
-	border-radius: 5px;
-	margin: auto auto 8px auto;
-	width: 50%;
+	border-radius: 0 0 5px 5px;
+	margin-bottom: 20px;
 	position: relative;
 	box-sizing: border-box;
+	text-align: left;
+	opacity: 0.9;
+	width: 100%;
 }
 
 /* Div around the video answer */
@@ -420,11 +427,12 @@ h2 {
 }
 
 /* The Youtube video */
-#ytVideo {
-	border: 1px solid white;
-	width: 100%;
+#youtubeVideo {
+	border: 2px solid white;
+	border-radius: 10px;
+	height: 315px;
 	max-width: 560px;
-	max-height: 315px;
+	width: 100%;
 }
 
 
@@ -486,7 +494,17 @@ h2 {
 
 	padding: 5px;
 	border-radius: 5px;
-	text-align: center;
 	font-weight: bold;
 	border: 2px solid black;
+}
+
+#discordWidget {
+	border: 2px solid white;
+	width: 350px;
+	height: 500px;
+	border-radius: 10px;
+}
+
+#updateDate {
+	font-style: italic;
 }
