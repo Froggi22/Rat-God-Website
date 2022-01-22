@@ -25,10 +25,13 @@
 
 This is the source code for Rat God's website, a Discord bot that will help you in Escape From Tarkov. Have easy and fast access to in-game information!
 
-For a description and features about the bot - see the [bot's repository](https://github.com/Froggi22/Rat-God).
+This repository is for everything related to the website.
+
+For bot description and features - see the [bot's repository](https://github.com/Froggi22/Rat-God).
 
 ## Links
 
+- [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=274877958208&scope=bot%20applications.commands)
 - [Support Discord Server](https://discord.com/invite/kg7VfRQ9Xw) *<-- Highly recommend to join!*
 - [Website](https://rat-god-website.herokuapp.com/)
 - [Bot's repository](https://github.com/Froggi22/Rat-God)
