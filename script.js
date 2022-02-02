@@ -14,7 +14,7 @@ function insertHref (classname, URL, URLExtra="") {
 }
 
 insertHref("discordInviteLink", discordInviteLink);
-insertHref("botInviteLink", botInviteLink);
+insertHref("bot-invite-link", botInviteLink);
 insertHref("tarkovWikiLink", tarkovWikiLink);
 insertHref("githubRatGodLink", githubRatGodLink);
 insertHref("githubRatGodWebsiteLink", githubRatGodLink, "-Website");
@@ -23,15 +23,9 @@ insertHref("githubRatGodWebsiteContributingLink", githubRatGodLink, "-Website#co
 // Oh god these class names are long
 
 /* ===== FAQ Collapsibles ===== */
-const collapsible = document.getElementsByClassName("collapsible"); // Fetch all collapsible quesion-buttons
-for (let element = 0; element < collapsible.length; element++) { // Iterate through all collapsibles
-	collapsible[element].addEventListener("click", function() { // Add click event listeners on each one
-		this.classList.toggle("active"); // Add "active" class on clicked collapsable
-		let content = this.nextElementSibling;
-		if (content.style.maxHeight) {
-			content.style.maxHeight = null;
-		} else {
-			content.style.maxHeight = content.scrollHeight + "px";
-		}
+const collapsible = document.getElementsByTagName("summary"); // Fetch all collapsible summaries
+for (let elementnr = 0; elementnr < collapsible.length; elementnr++) { // Iterate through all collapsibles
+	collapsible[elementnr].addEventListener("click", function() { // Add click event listeners on each one
+		this.classList.toggle("faq-active"); // Add the class "active" on clicked collapsable
 	});
 }

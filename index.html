@@ -19,18 +19,18 @@
 	<nav>
 		<ul>
 			<li>
-				<div class="leftNav authorText">
+				<div class="left-nav author-text">
 					<span id="copyleft">&copy;</span> Froggi22
-					<a class="defaultLink discordInviteLink" target="_blank">Support</a>
+					<a class="default-link discordInviteLink" target="_blank">Support</a>
 				</div>
 			</li>
 			<li>
-				<div class="rightNav">
-					<a href="#about" class="defaultLink">About</a>
-					<a href="#features" class="defaultLink">Features</a>
-					<a href="#faq" class="defaultLink">FAQ</a>
-					<a href="#contact" class="defaultLink">Contact Us</a>
-					<a class="defaultLink botInviteLink" target="_blank"><span class="coolBackgroundGold">Invite Rat God</span></a>
+				<div class="right-nav">
+					<a href="#about" class="default-link">About</a>
+					<a href="#features" class="default-link">Features</a>
+					<a href="#faq" class="default-link">FAQ</a>
+					<a href="#contact" class="default-link">Contact Us</a>
+					<a class="default-link bot-invite-link" target="_blank"><span class="cool-background-gold">Invite Rat God</span></a>
 				</div>
 			</li>
 		</ul>
@@ -39,17 +39,17 @@
 	<!-- Header -->
 	<header>
 		<!-- Frontpage image -->
-		<div id="headerPart1">
-			<a target="_blank" class="botInviteLink">
+		<div id="header-part-1">
+			<a target="_blank" class="bot-invite-link">
 				<img src="assets/RG.png" alt="Rat God" title="Invite Rat God to your Discord server" />
 			</a>
 		</div>
 
 		<!-- Frontpage title, description & invite button -->
-		<div id="headerPart2">
+		<div id="header-part-2">
 			<h1>Rat God</h1>
 			<p>Fast access to in-game Tarkov information.</p>
-			<a class="defaultLink coolBackgroundWhite botInviteLink" target="_blank">Invite</a>
+			<a class="default-link coolBackgroundWhite bot-invite-link" target="_blank">Invite</a>
 		</div>
 	</header>
 
@@ -58,7 +58,7 @@
 		<h2>About</h2>
 		<p>
 			Rat God is an open source Discord bot that will help you in the game Escape From Tarkov!<br />
-			It obtains information from the <a class="defaultLink goldText tarkovWikiLink"><strong>Official Escape from Tarkov Wiki</strong></a>, and delivering it to the user with a slash command request.<br />
+			It obtains information from the <a class="default-link goldText tarkovWikiLink"><strong>Official Escape from Tarkov Wiki</strong></a>, and delivering it to the user with a slash command request.<br />
 			This bot benefits the user due to it being a fast lookup for ammunition and maps details, and most likely faster than looking it up on said Wiki!
 		</p>
 		<p><br />
@@ -149,38 +149,52 @@
 	<section id="faq">
 		<h2>FAQ</h2>
 
-		<div id="faqContainer">
-			<button class="collapsible"> <!-- Q1 -->
-				Where can I test out the bot and get in contact with you?
-			</button>
-			<div class="content"> <!-- A1 -->
-				<p>There is a Discord Support Server for just this. Click <a target="_blank" class="whiteLinkText discordInviteLink"><strong>here</strong></a> to join!</p>
-			</div>
+		<div id="faq-container">
 
-			<button class="collapsible"> <!-- Q2 -->
-				Do you have a video explaining how to use the bot?
-			</button>
-			<div class="content"> <!-- A2 -->
-				<div class="centeringContainer">
-					<p>Yes we do! Watch the video right here or <a href="https://youtu.be/xQwQqnkmScg" class="whiteLinkText" target="_blank">on youtube</a>.</p>
-					<iframe src="https://www.youtube.com/embed/xQwQqnkmScg" allowfullscreen id="youtubeVideo"></iframe>
+			<!-- Q1 -->
+			<details>
+				<summary>
+					Where can I test out the bot and get in contact with you?
+				</summary>
+				<div class="faq-answer">
+					<p>There is a Discord Support Server for just this. Click <a target="_blank" class="white-link-text discordInviteLink"><strong>here</strong></a> to join!</p>
 				</div>
-			</div>
+			</details>
 
-			<button class="collapsible"> <!-- Q3 -->
-				Is your bot open source?
-			</button>
-			<div class="content"> <!-- A3 -->
-				<p>Yes, it's distributed under the terms of the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank" class="defaultLink whiteLinkText">GNU General Public License, v3</a>. <br />
-				Check it out on Github; <a target="_blank" class="whiteLinkText githubRatGodLink">Bot</a> & <a target="_blank" class="whiteLinkText githubRatGodWebsiteLink">Website</a>.</p>
-			</div>
+			<!-- Q2 -->
+			<details>
+				<summary>
+					Do you have a video explaining how to use the bot?
+				</summary>
+				<div class="faq-answer">
+					<p>Yes we do! Watch the video right here or <a href="https://youtu.be/xQwQqnkmScg" class="white-link-text" target="_blank">on youtube</a>.</p>
+					<div class="container-center">
+						<iframe src="https://www.youtube.com/embed/xQwQqnkmScg" allowfullscreen id="youtubeVideo"></iframe>
+					</div>
+					<p class="text-align-right"><i>Yes many cringe</i></p>
+				</div>
+			</details>
 
-			<button class="collapsible"> <!-- Q4 -->
-				Can I contribute to the project?
-			</button>
-			<div class="content"> <!-- A4 -->
-				<p>Absolutely! More info on Github under the Contributing section; <a target="_blank" class="whiteLinkText githubRatGodContributingLink">Bot</a> & <a target="_blank" class="whiteLinkText githubRatGodWebsiteContributingLink">Website</a></p>
-			</div>
+			<!-- Q3 -->
+			<details>
+				<summary>
+					Is your bot open source?
+				</summary>
+				<div class="faq-answer">
+					<p>Yes, Rat God is an Open Source project covered by the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank" class="default-link white-link-text"></a>GNU General Public License version 2</a>.<br />
+						Check out the <a target="_blank" class="white-link-text githubRatGodLink">Bot</a> and the <a target="_blank" class="white-link-text githubRatGodWebsiteLink">Website</a> on Github.</p>
+				</div>
+			</details>
+
+			<!-- Q3 -->
+			<details>
+				<summary>
+					Can I contribute to the project?
+				</summary>
+				<div class="faq-answer">
+					<p>You are more than welcome to! More info about this is on the <a target="_blank" class="white-link-text githubRatGodContributingLink">Bot</a> and <a target="_blank" class="white-link-text githubRatGodWebsiteContributingLink">Website</a> Github repository respectively, under the "Contributing" section.</p>
+				</div>
+			</details>
 		</div>
 	</section>
 
@@ -196,13 +210,13 @@
 			<img src="assets/GitHub_logo.png" alt="Github" id="github" title="View Rat God's source code on Github" />
 		</a>
 		<br />
-		<a href="#top" class="defaultLink" id="backTop">Back To Top</a>
+		<a href="#top" class="default-link" id="backTop">Back To Top</a>
 		<br /><br /><br />
 		<iframe id="discordWidget" src="https://discord.com/widget?id=861948446910578699&theme=dark"></iframe>
-		<p id="updateDate">Updated 2021-01-30</p>
+		<p id="updateDate">Updated 2022-02-02</p>
 	</section>
 
 	<script src="script.js"></script>
-
 </body>
+
 </html>

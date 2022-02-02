@@ -2,10 +2,10 @@
 
 /* Small screens */
 @media only screen and (max-width: 800px) {
-	.leftNav {
+	.left-nav {
 		float: none;
 	}
-	.rightNav {
+	.right-nav {
 		float: none;
 	}
 	nav ul {
@@ -24,7 +24,7 @@
 	nav ul li > div {
 		width: max-content;
 	}
-	.coolBackgroundGold {
+	.cool-background-gold {
 		border-radius: 30px;
 		margin-right: 0;
 		margin-bottom: 10px;
@@ -36,7 +36,7 @@
 	header {
 		padding: 200px 0 100px 0;
 	}
-	#headerPart1 img {
+	#header-part-1 img {
 		width: 200px;
 	}
 	#about, #features, #faq, #contact {
@@ -49,12 +49,12 @@
 
 /* Average/large screens */
 @media only screen and (min-width: 801px) {
-	.leftNav {
+	.left-nav {
 		float: left;
 		margin-left: -30px;
 		text-align: left;
 	}
-	.rightNav {
+	.right-nav {
 		display: inline;
 		float: right;
 		margin-right: 30px;
@@ -65,7 +65,7 @@
 		font-size: 16px;
 		margin-left: 30px;
 	}
-	.coolBackgroundGold {
+	.cool-background-gold {
 		border-radius: 30px;
 		margin-bottom: 0;
 		margin-right: 10px;
@@ -78,7 +78,7 @@
 	header {
 		padding: 150px 0;
 	}
-	#headerPart1 img {
+	#header-part-1 img {
 		width: 300px;
 	}
 	#about, #features, #faq, #contact {
@@ -146,11 +146,11 @@ nav ul li div a {
 	color: white;
 }
 
-.authorText {
+.author-text {
 	font-weight: bold;
 }
 
-.authorText a {
+.author-text a {
 	font-weight: normal;
 }
 
@@ -166,18 +166,18 @@ nav ul li div a {
 }
 
 /* Default links properties */
-.defaultLink, .defaultLink:visited {
+.default-link, .default-link:visited {
 	color: white;
 	text-decoration: none;
 }
 
 /* Default links properties on hover */
-.defaultLink:hover {
+.default-link:hover {
 	text-decoration: underline;
 }
 
 /* The invite Rat God link in navbar */
-.coolBackgroundGold {
+.cool-background-gold {
 	background: rgb(228,178,3);
 	background: -moz-linear-gradient(270deg, rgba(228,178,3,1) 0%, rgba(203,112,17,1) 100%);
 	background: -webkit-linear-gradient(270deg, rgba(228,178,3,1) 0%, rgba(203,112,17,1) 100%);
@@ -203,12 +203,12 @@ header {
 }
 
 /* Header section except image */
-#headerPart2 {
+#header-part-2 {
 	margin-top: -60px;
 }
 
 /*Rat God slogan*/
-#headerPart2 p {
+#header-part-2 p {
 	font-size: 20px;
 	font-weight: normal;
 	padding-bottom: 20px;
@@ -297,14 +297,14 @@ header {
 }
 
 /* White link text */
-.whiteLinkText, .whiteLinkText:visited {
+.white-link-text, .white-link-text:visited {
 	color: white;
 	font-weight: bold;
 	text-decoration: none;
 }
 
 /* White link text on hover */
-.whiteLinkText:hover {
+.white-link-text:hover {
 	text-decoration: underline;
 }
 
@@ -353,16 +353,36 @@ h2 {
 	font-size: 30px;
 }
 
-#faqContainer {
+#faq-container {
 	margin: auto;
 	width: 50%;
 }
 
-/* The question buttons */
-.collapsible {
+details[open] summary ~ * {
+	animation: sweep-in-left 0.2s ease-in-out;
+}
+
+@keyframes sweep-in-left {
+	0% {
+		filter: opacity(0);
+		transform: translateX(-10px);
+	}
+	100% {
+		filter: opacity(1);
+		transform: translateX(0);
+	}
+}
+
+details {
+	margin-bottom: 20px;
+}
+
+summary {
+	box-sizing: border-box;
 	background-color: #2f3a52;
 	border: none;
-	border-radius: 5px;
+	border-radius: 10px;
+	transition: border-radius 0.2s;
 	color: white;
 	cursor: pointer;
 	font-size: 15px;
@@ -370,66 +390,49 @@ h2 {
 	outline: none;
 	padding: 18px;
 	text-align: left;
-	transition: border-radius 0.2s;
 	width: 100%;
 }
 
-/* Question buttons on hover */
-.collapsible:hover {
+summary:hover {
 	background-color: #262e41;
 }
 
-.active {
+.faq-active {
 	background-color: #262e41;
-	border-radius: 5px 5px 0 0;
-}
-
-/* The plus/minus on each button containing a question */
-.collapsible:after {
-	content: '\002B';
-	color: white;
-	font-weight: bold;
-	float: right;
-	margin-left: 5px;
-}
-
-/* Question buttons change symbol */
-.active:after {
-	content: "\2212";
+	border-radius: 10px 10px 0 0;
 }
 
 /* Answer to questions */
-.content {
+.faq-answer {
 	background-color: #262e41;
-
-	padding: 0 18px;
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.2s ease-out;
-	border-radius: 0 0 5px 5px;
-	margin-bottom: 20px;
-	position: relative;
+	padding: 5px 18px;
+	border-radius: 0 0 10px 10px;
 	box-sizing: border-box;
 	text-align: left;
-	opacity: 0.9;
 	width: 100%;
+	margin: 0;
+	border-top: 1px ridge white;
 }
 
 /* Div around the video answer */
-.centeringContainer {
+.container-center {
 	width: 100%;
 	display: grid;
 }
 
 /* Div around video answer, all children */
-.centeringContainer > * {
+.container-center * {
 	margin: 10px auto;
+}
+
+.text-align-right {
+	text-align: right;
 }
 
 /* The Youtube video */
 #youtubeVideo {
 	border: 2px solid white;
-	border-radius: 10px;
+	border-radius: 15px;
 	height: 315px;
 	max-width: 560px;
 	width: 100%;
