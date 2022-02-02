@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-	<a href="LICENSE"><img src="https://badgen.net/badge/License/GPL%20v3/blue" alt="License GPL v3" /></a>
+	<a href="LICENSE"><img src="https://badgen.net/badge/License/GPL%20v2/blue" alt="GNU General Public License, version 2" /></a>
 	<a href="https://discord.com/invite/kg7VfRQ9Xw"><img src="https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label" alt="Discord Server" /></a>
 	<a href="https://rat-god-website.herokuapp.com/"><img src="https://img.shields.io/website?url=https://rat-god-website.herokuapp.com/" alt="Refresh for website status" /></a>
 </p>
@@ -19,11 +19,17 @@
 - [About](#about)
 - [Links](#links)
 - [Contributing](#contributing)
+	- [Prerequisites](#prerequisites)
+	- [Submit a Pull Request](#submit-a-pull-request)
 - [Folder & File Information](#folder--file-information)
+	- [Folders](#folders)
+	- [Files](#files)
+
+- - -
 
 ## About
 
-This is the source code for Rat God's website, a Discord bot that will help you in Escape From Tarkov. Have easy and fast access to in-game information!
+This is the source code for Rat God's website, covered by the [GNU General Public License version 2](LICENSE). Rat God is an Open Source Discord bot project that will help you in the game Escape From Tarkov. Have easy and fast access to in-game information!
 
 This repository is for everything related to the website.
 
@@ -41,37 +47,24 @@ For bot description and features - see the [bot's repository](https://github.com
 
 ### Prerequisites
 
-- This code is distributed under the terms of the [GNU General Public License, v3](LICENSE). Read and understand it.
-
-### Setup
-
-1. Clone me where you keep your Github projects: `git clone https://github.com/Froggi22/Rat-God-Website.git`.
-2. Navigate to the project folder: `cd Rat-God-Website`.
-3. Open the .html in you favorite browser. 🎉
+- Have a browser lol
 
 ### Submit a Pull Request
 
 1. Fork this repository (should be on the top right of this page).
 2. Clone the fork to your desired local Github projects folder.
 3. Code your cool new feature!
-4. [Run](#setup) and test your cool new feature.
-5. Stage, commit, and push your files:
-
-```txt
-git add <changed-files...>
-git commit -m "Cool new feature" -m "Description of changes"
-git push origin <awesome-new-feature-name>
-```
-
-6. `git` will output a link to help you create a new pull request from there.
+4. Open the .html in you favorite browser & test your cool new feature.
+5. Stage, commit, and push your files to your fork.
+6. Create a new pull request.
 
 ## Folder & File Information
 
-### What's in each folder?
+### Folders
 
 - `.vscode/` - Visual Studio Code settings.
 
-### What are these files?
+### Files
 
 - `.gitignore` - Used for ignoring files from Git.
 - `composer.json` & `index.php` - For Heroku - the bot's hosting platform.
