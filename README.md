@@ -22,8 +22,8 @@
 	- [Prerequisites](#prerequisites)
 	- [Submit a Pull Request](#submit-a-pull-request)
 - [Folder & File Information](#folder--file-information)
-	- [Folders](#folders)
-	- [Files](#files)
+	- [Folder Info](#folder-info)
+	- [File Info](#file-info)
 
 - - -
 
@@ -60,11 +60,11 @@ For bot description and features - see the [bot's repository](https://github.com
 
 ## Folder & File Information
 
-### Folders
+### Folder Info
 
 - `.vscode/` - Visual Studio Code settings.
 
-### Files
+### File Info
 
 - `.gitignore` - Used for ignoring files from Git.
 - `composer.json` & `index.php` - For Heroku - the bot's hosting platform.
