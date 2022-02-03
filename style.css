@@ -2,6 +2,9 @@
 
 /* Small screens */
 @media only screen and (max-width: 800px) {
+	.nav-small-hide {
+		display: none;
+	}
 	.left-nav {
 		float: none;
 	}
@@ -161,6 +164,11 @@ nav {
 nav ul {
 	list-style-type: none;
 	padding-top: 8px;
+}
+
+.left-nav {
+	display: flex;
+	align-items: center;
 }
 
 /* Nav bar list items */
