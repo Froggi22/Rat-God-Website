@@ -24,6 +24,9 @@
 	nav ul li > div {
 		width: max-content;
 	}
+	noscript {
+		top: 160px;
+	}
 	.cool-background-gold {
 		border-radius: 30px;
 		margin-right: 0;
@@ -64,6 +67,9 @@
 		display: inline;
 		font-size: 16px;
 		margin-left: 30px;
+	}
+	noscript {
+		top: 70px;
 	}
 	.cool-background-gold {
 		border-radius: 30px;
@@ -116,6 +122,21 @@ header, #about, #features, #faq, #contact {
 	padding: 50px;
 }
 
+a {
+	cursor: pointer;
+}
+
+/* ========== Noscript =========== */
+
+noscript {
+	background-color: #c22e32;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	z-index: 10;
+	padding: 5px;
+}
+
 
 /* ========== Navigation Bar =========== */
 
@@ -132,7 +153,8 @@ nav {
 	position: fixed;
 	min-height: 70px;
 	width: 100%;
-	z-index: 500;
+	z-index: 9;
+	display: table;
 }
 
 /* Nav bar list */
@@ -470,6 +492,7 @@ summary:hover {
 #discord {
 	filter: brightness(3); /* White */
 	transition: filter 0.2s;
+	cursor: pointer;
 }
 
 #discord:hover {
@@ -480,6 +503,7 @@ summary:hover {
 #github {
 	filter: invert(0);  /* White */
 	transition: filter 0.2s;
+	cursor: pointer;
 }
 
 #github:hover {
