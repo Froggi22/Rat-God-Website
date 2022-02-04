@@ -5,27 +5,27 @@
 	.nav-small-hide {
 		display: none;
 	}
-	.left-nav {
-		float: none;
+	.left-nav-div {
+		/*float: none;*/
 	}
-	.right-nav {
-		float: none;
+	.right-nav-div {
+		/*float: none;*/
 	}
 	nav ul {
-		align-items: center;
+		/*align-items: center;
 		display: flex;
 		padding: 0;
 		text-align: center;
-		justify-content: center;
+		justify-content: center;*/
 	}
 	nav ul li div a {
-		display: block;
+		/*display: block;
 		font-size: 14px;
 		margin-left: 5px;
-		margin-top: 5px;
+		margin-top: 5px;*/
 	}
 	nav ul li > div {
-		width: max-content;
+		/*width: max-content;*/
 	}
 	noscript {
 		top: 160px;
@@ -42,7 +42,7 @@
 	header {
 		padding: 200px 0 100px 0;
 	}
-	#header-part-1 img {
+	#header-part-1 a img {
 		width: 200px;
 	}
 	#about, #features, #faq, #contact {
@@ -55,21 +55,21 @@
 
 /* Average/large screens */
 @media only screen and (min-width: 801px) {
-	.left-nav {
-		float: left;
+	.left-nav-div {
+		/*float: left;
 		margin-left: -30px;
-		text-align: left;
+		text-align: left;*/
 	}
-	.right-nav {
-		display: inline;
+	.right-nav-div {
+		/*display: inline;
 		float: right;
 		margin-right: 30px;
-		text-align: left;
+		text-align: left;*/
 	}
 	nav ul li div a {
-		display: inline;
+		/*display: inline;
 		font-size: 16px;
-		margin-left: 30px;
+		margin-left: 30px;*/
 	}
 	noscript {
 		top: 70px;
@@ -87,7 +87,7 @@
 	header {
 		padding: 150px 0;
 	}
-	#header-part-1 img {
+	#header-part-1 a img {
 		width: 300px;
 	}
 	#about, #features, #faq, #contact {
@@ -157,32 +157,50 @@ nav {
 	min-height: 70px;
 	width: 100%;
 	z-index: 9;
-	display: table;
+	display: flex;
 }
 
 /* Nav bar list */
 nav ul {
 	list-style-type: none;
-	padding-top: 8px;
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	margin: auto 0;
+	justify-content: space-between;
+	padding: 0 20px;
 }
 
-.left-nav {
+nav ul li {
+	width: max-content;
+	/*display: flex;*/
+	/*box-sizing: border-box;*/
+}
+
+#right-nav-li {
 	display: flex;
-	align-items: center;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+}
+
+nav ul li div {
+	gap: 20px;
+}
+
+.left-nav-div {
+	display: flex;
+}
+
+.left-nav-div * {
+	/*display: table-cell;*/
+	margin: 0;
+}
+
+.right-nav-div * {
+	margin: 0 10px;
 }
 
 /* Nav bar list items */
-nav ul li div a {
-	color: white;
-}
-
-.author-text {
-	font-weight: bold;
-}
-
-.author-text a {
-	font-weight: normal;
-}
 
 /* Turns the copyright symbol to copyleft */
 #copyleft {
@@ -228,13 +246,26 @@ header {
 	background: linear-gradient(210deg, rgba(227,156,26,1) 0%, rgba(158,75,19,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e39c1a",endColorstr="#9e4b13",GradientType=1);
 
+	/*https://duckduckgo.com/?q=gold+sky+wallpaper&t=ffab&iar=images&iax=images&ia=images&iai=https%3A%2F%2Fjooinn.com%2Fimages%2Fgolden-sky-5.jpg*/
+	background-image: url("./assets/Background.jpg");
 	min-height: 500px;
 	display: grid;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header-part-1 a img {
+	border: 2px ridge white;
+	border-radius: 30px;
 }
 
 /* Header section except image */
 #header-part-2 {
 	margin-top: -60px;
+	/*color: #754805;*/
 }
 
 /*Rat God slogan*/
