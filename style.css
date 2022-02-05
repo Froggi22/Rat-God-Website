@@ -299,12 +299,12 @@ header {
 	gap: 50px;
 }
 
-#features-commands-container div div:first-child {
-	text-align: left;
+#features-commands-container > div {
+	width: max-content;
 }
 
-#features-commands-ammo-container, #features-commands-maps-container {
-	max-width: 400px;
+#features-commands-container div div:first-child {
+	text-align: left;
 }
 
 /* Gold link text */
