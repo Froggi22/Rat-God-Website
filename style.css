@@ -5,27 +5,9 @@
 	.nav-small-hide {
 		display: none;
 	}
-	.left-nav-div {
-		/*float: none;*/
-	}
-	.right-nav-div {
-		/*float: none;*/
-	}
 	nav ul {
-		/*align-items: center;
-		display: flex;
-		padding: 0;
-		text-align: center;
-		justify-content: center;*/
-	}
-	nav ul li div a {
-		/*display: block;
-		font-size: 14px;
-		margin-left: 5px;
-		margin-top: 5px;*/
-	}
-	nav ul li > div {
-		/*width: max-content;*/
+		width: max-content;
+		margin: auto auto;
 	}
 	noscript {
 		top: 160px;
@@ -55,21 +37,9 @@
 
 /* Average/large screens */
 @media only screen and (min-width: 801px) {
-	.left-nav-div {
-		/*float: left;
-		margin-left: -30px;
-		text-align: left;*/
-	}
-	.right-nav-div {
-		/*display: inline;
-		float: right;
-		margin-right: 30px;
-		text-align: left;*/
-	}
-	nav ul li div a {
-		/*display: inline;
-		font-size: 16px;
-		margin-left: 30px;*/
+	nav ul {
+		width: 100%;
+		margin: auto 0;
 	}
 	noscript {
 		top: 70px;
@@ -165,10 +135,10 @@ nav ul {
 	list-style-type: none;
 	display: flex;
 	flex-flow: row wrap;
-	width: 100%;
-	margin: auto 0;
 	justify-content: space-between;
 	padding: 0 20px;
+	/*width: 100%;
+	margin: auto 0;*/
 }
 
 nav ul li {
@@ -200,7 +170,7 @@ nav ul li div {
 	margin: 0 10px;
 }
 
-/* Nav bar list items */
+/* Navbar list items */
 
 /* Turns the copyright symbol to copyleft */
 #copyleft {
@@ -566,7 +536,7 @@ summary:hover {
 
 #discordWidget {
 	border: 2px solid white;
-	width: 350px;
+	max-width: 350px;
 	height: 500px;
 	border-radius: 10px;
 }
