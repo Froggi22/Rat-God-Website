@@ -68,9 +68,7 @@
 	}
 }
 
-
 /* ========== Whole document =========== */
-
 html {
 	cursor: auto;
 	min-width: 400px;
@@ -100,7 +98,6 @@ a {
 }
 
 /* ========== Noscript =========== */
-
 noscript {
 	background-color: #c22e32;
 	width: 100%;
@@ -110,9 +107,7 @@ noscript {
 	padding: 5px;
 }
 
-
 /* ========== Navigation Bar =========== */
-
 nav {
 	background: rgb(44,44,129);
 	background: -moz-linear-gradient(90deg, rgba(44,44,129,1) 0%, rgba(77,77,196,1) 100%);
@@ -206,9 +201,7 @@ nav ul li div {
 	width: 100%;
 }
 
-
 /* =========== Header ============ */
-
 header {
 	background: rgb(227,156,26);
 	background: -moz-linear-gradient(210deg, rgba(227,156,26,1) 0%, rgba(158,75,19,1) 100%);
@@ -262,9 +255,7 @@ header {
 	text-decoration: underline;
 }
 
-
 /* ========== About =========== */
-
 #about {
 	background: rgb(21,21,66);
 	background: -moz-linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
@@ -285,9 +276,7 @@ header {
 	text-align: justify;
 }
 
-
 /* ========== Features =========== */
-
 #features {
 	background: rgb(32,32,87);
 	background: -moz-linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);
@@ -296,24 +285,26 @@ header {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#202057",endColorstr="#133d60",GradientType=1);
 }
 
-/* The general info section under title */
-.ulDivParent {
-	text-align: center;
-}
-
-#features ul {
+#features div ul {
 	display: inline-block;
 	text-align: left;
 }
 
-#features table {
+#features-commands-container {
+	max-width: 900px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
 	margin: 0 auto;
+	gap: 50px;
+}
+
+#features-commands-container div div:first-child {
 	text-align: left;
 }
 
-#features table tr td {
-	padding: 0 30px;
-	vertical-align: top;
+#features-commands-ammo-container, #features-commands-maps-container {
+	max-width: 400px;
 }
 
 /* Gold link text */
@@ -359,13 +350,11 @@ code {
 	border: 1px solid black;
 	border-radius: 10px;
 	font-size: 14px;
-	padding: 5px;
+	padding: 15px 5px;
 	width: 100%;
 }
 
-
 /* ========== FAQ =========== */
-
 #faq {
 	background: rgb(21,21,66);
 	background: -moz-linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
@@ -469,9 +458,7 @@ summary:hover {
 	width: 100%;
 }
 
-
 /* ========== Contact Us =========== */
-
 #contact {
 	background: rgb(32,32,87);
 	background: -moz-linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);

@@ -71,7 +71,7 @@
 	<!-- Features -->
 	<section id="features">
 		<h2>Features</h2>
-		<div class="ulDivParent"> <!-- General info section -->
+		<div> <!-- General info section -->
 			<ul>
 				<li>Rat God uses <a href="https://support.discord.com/hc/en-us/articles/1500000368501-Slash-Commands-FAQ" target="_blank" class="default-link goldText"><strong>Slash commands</strong></a> - Prefix: <code>/</code>.</li>
 				<li>Auto-complete choices, so you don't have to remember any by heart!</li>
@@ -80,26 +80,17 @@
 			</ul>
 		</div>
 
-		<table> <!-- More detailed info section -->
-			<tr>
-				<td>
+		<div id="features-commands-container">
+			<div id="features-commands-ammo-container">
+				<div id="features-commands-ammo-text">
 					<p>
 						Commands for all calibers:<br />
 						Example command: <code>/ammo 20x70mm</code>.<br />
 						Copy-pasting raw command: <code>/ammo caliber:20x70mm</code>.
 					</p>
-				</td>
-				<td class="padLeft">
-					<p>
-						Commands for all maps:<br />
-						Example command: <code>/maps woods map</code>.<br />
-						Copy-pasting raw command: <code>/maps woods map:Map</code>.<br />
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<p class="codeblock padLeft">
+				</div>
+				<div id="features-commands-ammo-commands">
+					<p class="codeblock">
 						12x70mm<br />
 						20x70mm<br />
 						23x75mm<br />
@@ -123,8 +114,17 @@
 						40x46 mm<br />
 						Stationary Weapons<br />
 					</p>
-				</td>
-				<td>
+				</div>
+			</div>
+			<div id="features-commands-maps-container">
+				<div id="features-commands-maps-text">
+					<p>
+						Commands for all maps:<br />
+						Example command: <code>/maps woods map</code>.<br />
+						Copy-pasting raw command: <code>/maps woods map:Map</code>.<br />
+					</p>
+				</div>
+				<div id="features-commands-maps-commands">
 					<p class="codeblock">
 						<strong>Customs:</strong><br />Info | Normal Map | Hidden Stashes | Interactive Map |<br />Dorms Map | 3D Map.<br /><br />
 
@@ -142,9 +142,9 @@
 
 						<strong>Woods:</strong><br />Info | Normal Map | Hidden Stashes | Interactive Map.<br />
 					</p>
-				</td>
-			</tr>
-		</table>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<!-- FAQ -->
