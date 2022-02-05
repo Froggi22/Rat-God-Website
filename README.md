@@ -7,9 +7,9 @@
 </p>
 
 <p align="center">
-	<a href="LICENSE"><img src="https://badgen.net/badge/License/GPL%20v2/blue" alt="GNU General Public License, version 2" /></a>
-	<a href="https://discord.com/invite/kg7VfRQ9Xw"><img src="https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label" alt="Discord Server" /></a>
-	<a href="https://rat-god-website.herokuapp.com/"><img src="https://img.shields.io/website?url=https://rat-god-website.herokuapp.com/" alt="Refresh for website status" /></a>
+	<a href="LICENSE"><img src="https://badgen.net/badge/License/GPLv2/blue" alt="GNU General Public License, version 2" title="License GPLv2" /></a>
+	<a href="https://discord.com/invite/kg7VfRQ9Xw"><img src="https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label" alt="Discord Server" title="Join our Discord community!" /></a>
+	<a href="https://rat-god-website.herokuapp.com/"><img src="https://img.shields.io/website?url=https://rat-god-website.herokuapp.com/" alt="Refresh for website status" title="Website status" /></a>
 </p>
 
 - - -
@@ -19,6 +19,7 @@
 - [About](#about)
 - [Links](#links)
 - [Contributing](#contributing)
+	- [If you wanna help out, please do!](#if-you-wanna-help-out-please-do)
 	- [Prerequisites](#prerequisites)
 	- [Submit a Pull Request](#submit-a-pull-request)
 - [Folder & File Information](#folder--file-information)
@@ -44,6 +45,10 @@ For bot description and features - see the [bot's repository](https://github.com
 - Vote on [Top.gg](https://top.gg/bot/864572952275714059/vote)
 
 ## Contributing
+
+### If you wanna help out, please do!
+
+We're always looking for people who can help with anything from simple spelling mistakes, icon updates, fixes for small bugs, or just posting issues to keep track of what needs to be done.
 
 ### Prerequisites
 
