@@ -132,14 +132,10 @@ nav ul {
 	flex-flow: row wrap;
 	justify-content: space-between;
 	padding: 0 20px;
-	/*width: 100%;
-	margin: auto 0;*/
 }
 
 nav ul li {
 	width: max-content;
-	/*display: flex;*/
-	/*box-sizing: border-box;*/
 }
 
 #right-nav-li {
@@ -157,7 +153,6 @@ nav ul li div {
 }
 
 .left-nav-div * {
-	/*display: table-cell;*/
 	margin: 0;
 }
 
@@ -166,7 +161,6 @@ nav ul li div {
 }
 
 /* Navbar list items */
-
 /* Turns the copyright symbol to copyleft */
 #copyleft {
 	display: inline-block;
