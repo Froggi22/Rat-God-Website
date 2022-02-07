@@ -213,11 +213,11 @@ header {
 	background-image: url("./assets/Background.jpg");
 	min-height: 500px;
 	display: grid;
-    overflow-x: hidden;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+	overflow-x: hidden;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #header-part-1 a img {
