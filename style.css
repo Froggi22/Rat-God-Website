@@ -370,6 +370,7 @@ code {
 
 h2 {
 	font-size: 30px;
+	margin-top: 0;
 }
 
 #faq-container {
@@ -470,7 +471,7 @@ summary:hover {
 	text-align: center;
 }
 
-#contact a {
+#contact > a {
 	margin: 20px 50px 100px 50px;
 }
 
@@ -486,38 +487,78 @@ summary:hover {
 
 #discord {
 	filter: brightness(3); /* White */
-	transition: filter 0.2s;
+	transition: filter 0.2s ease;
 	cursor: pointer;
 }
 
 #discord:hover {
 	filter: brightness(1); /* Blue */
-	transition: filter 0.2s;
+	transition: filter 0.2s ease;
 }
 
 #github {
 	filter: invert(0);  /* White */
-	transition: filter 0.2s;
+	transition: filter 0.2s ease;
 	cursor: pointer;
 }
 
 #github:hover {
 	filter: invert(1);  /* Black */
-	transition: filter 0.2s;
+	transition: filter 0.2s ease;
 }
 
 /* Back to top anchor link */
-#backTop {
-	background: rgb(45,45,47);
-	background: -moz-linear-gradient(90deg, rgba(45,45,47,1) 0%, rgba(55,59,62,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(45,45,47,1) 0%, rgba(55,59,62,1) 100%);
-	background: linear-gradient(90deg, rgba(45,45,47,1) 0%, rgba(55,59,62,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d2d2f",endColorstr="#373b3e",GradientType=1);
-
-	padding: 5px;
+#to-top {
+	background-color: #c04d2a;
+	background-image: linear-gradient(90deg, #c04d2a 0%, #b68f1a 74%);
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	display: inline-flex;
+	height: 40px;
+	width: 150px;
+	border: 2px solid #BFC0C0;
+	margin: 0;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 0.8em;
+	letter-spacing: 1.5px;
+	align-items: center;
+	justify-content: center;
 	border-radius: 5px;
 	font-weight: bold;
-	border: 2px solid black;
+}
+
+#to-top a {
+	position: relative;
+	transition: all 0.4s ease-out;
+	color: white;
+}
+
+#to-top-transition {
+	width: 0;
+	height: 0;
+	filter: opacity(0);
+	left: 70px;
+	top: 20px;
+	transform: rotate(0deg);
+	background: none;
+	position: absolute;
+	transition: all 0.4s ease-Out;
+}
+
+#to-top:hover #to-top-transition {
+	width: 200%;
+	height: 500%;
+	filter: opacity(1);
+	left: -70px;
+	top: -70px;
+	background: #BFC0C0;
+	transform: rotate(80deg);
+}
+
+#to-top:hover a {
+	color: black;
 }
 
 #discordWidget {
