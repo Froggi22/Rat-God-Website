@@ -30,7 +30,7 @@
 
 ## About
 
-This is the source code for Rat God's website, covered by the [GNU General Public License version 2](LICENSE). Rat God is an Open Source Discord bot project that will help you in the game Escape From Tarkov. Have easy and fast access to in-game information!
+This is the source code for Rat God's website, covered by the [GNU Affero General Public License version 3](LICENSE). Rat God is an Open Source Discord bot project that will help you in the game Escape From Tarkov. Have easy and fast access to in-game information!
 
 This repository is for everything related to the website.
 
