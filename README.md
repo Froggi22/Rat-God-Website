@@ -17,6 +17,13 @@
 ## Table of contents
 
 - [About](#about)
+	- [Data Collection](#data-collection)
+	- [Why Open Source](#why-open-source)
+		- [Peer review & Reliability](#peer-review--reliability)
+		- [Transparency](#transparency)
+		- [Flexibility](#flexibility)
+		- [The Price Tag](#the-price-tag)
+	- [How This Project Makes Money](#how-this-project-makes-money)
 - [Links](#links)
 - [Contributing](#contributing)
 	- [If you wanna help out, please do!](#if-you-wanna-help-out-please-do)
@@ -36,6 +43,34 @@ This repository is for everything related to the website.
 
 For bot description and features - see the [bot's repository](https://github.com/Froggi22/Rat-God).
 
+### Data Collection
+
+This project does not collect nor store any data, thus not selling anything to 3rd parties - Because ignorance is bliss.
+
+### Why Open Source
+
+Here are the following reasons why this project is open source and supporting the movement:
+
+#### Peer review & Reliability
+
+Since the source code is freely accessible and any peer programmers can contribute, it turns into living code rather than closed and stagnant. Consequently, this may result that the community could keep updating the project and make it outlive its original authors. Additionally, this means that you can find help, resources, and perspectives that reach beyond one interest group or company.
+
+#### Transparency
+
+All code changes, data tracking, and collections are public and allow you to check and track that for yourself without relying on vendor promises. This results in a trustworthy and reliable product or service as you can see all the shenanigans going on.
+
+#### Flexibility
+
+The emphasis on modification can make the community address their unique problems with code suggestions. Alternatively, create forks and add said specific features tailored to their needs. Another flexibility perk is the freedom - you can take your open source code anywhere and use it for anything, at any time.
+
+#### The Price Tag
+
+Services that are open source are often also free of charge, like this project.
+
+### How This Project Makes Money
+
+This project does not make any money. However, you can make donations on our [Patreon site](https://www.patreon.com/Froggi22) to support this project!
+
 ## Links
 
 - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=274877958208&scope=bot%20applications.commands)
@@ -43,6 +78,7 @@ For bot description and features - see the [bot's repository](https://github.com
 - [Website](https://rat-god-website.herokuapp.com/)
 - [Bot's repository](https://github.com/Froggi22/Rat-God)
 - Vote on [Top.gg](https://top.gg/bot/864572952275714059/vote)
+- [Patreon](https://www.patreon.com/Froggi22)
 
 ## Contributing
 
