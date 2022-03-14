@@ -84,6 +84,7 @@ body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	margin: 0;
 	padding: 0;
+	line-height: 1.5;
 }
 
 header, #about, #features, #faq, #contact {
@@ -210,7 +211,7 @@ header {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e39c1a",endColorstr="#9e4b13",GradientType=1);
 
 	/*https://duckduckgo.com/?q=gold+sky+wallpaper&t=ffab&iar=images&iax=images&ia=images&iai=https%3A%2F%2Fjooinn.com%2Fimages%2Fgolden-sky-5.jpg*/
-	background-image: url("./assets/Background.jpg");
+	/*background-image: url("./assets/Background.jpg");*/
 	min-height: 500px;
 	display: grid;
 	overflow-x: hidden;
@@ -284,32 +285,17 @@ header {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#202057",endColorstr="#133d60",GradientType=1);
 }
 
-#features div ul {
+#features ul, #features ol {
 	display: inline-block;
 	text-align: left;
-}
-
-#features-commands-container {
-	max-width: 900px;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	margin: 0 auto;
-	gap: 50px;
-}
-
-#features-commands-container > div {
-	width: max-content;
-}
-
-#features-commands-container div div:first-child {
-	text-align: left;
+	margin-top: 0;
 }
 
 /* Gold link text */
 .goldText, .goldText:visited {
-	color: #e4b203;
+	color: #E4B203;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 /* Gold link text on hover */

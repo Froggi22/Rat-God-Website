@@ -1,5 +1,3 @@
-/* jshint esversion: 6 */ // For validation
-
 /* ===== FAQ Collapsibles ===== */
 const summary = document.getElementsByTagName("summary"); // Fetch all summaries
 for (let elementnum = 0; elementnum < summary.length; elementnum++) { // Iterate through all summaries
