@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Rat God" />
-	<meta property="og:url" content="http://rat-god-website.herokuapp.com" />
+	<meta property="og:url" content="https://rat-god-website.herokuapp.com" />
 	<meta property="og:description" content="An Open Source Discord bot that helps you in the game Escape From Tarkov with ammo and maps!" />
 	<meta property="og:image" content="https://cdn.discordapp.com/attachments/865617643449221141/920345495568777316/RG_Profile.png" />
 	<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#ffd700" />
@@ -101,13 +101,25 @@
 				<li>Optionally selecting the order of the bullets:<br />e.g. <code>/ammo caliber:20x70mm sorting:Damage</code>.</li>
 			</ol>
 		</div>
+
 		<h3>Maps 🗺️</h3>
 		<div>
-			<p>The maps command <code>/maps</code> also consists of 2 parts:</p>
+			<p>The maps command <code>/map</code> consists of 1 part:</p>
 			<ol>
-				<li>Choosing the location:<br />e.g. <code>/maps factory</code>.</li>
-				<li>As well as a guide:<br />e.g. <code>/maps factory map:Map</code>.</li>
+				<li>Choosing the location:<br />e.g. <code>/map location:factory</code>.</li>
 			</ol>
+			<p>
+				The embed response has some buttons (amount varies on the map).<br />
+				Some buttons link to external websites e.g. the wiki and to an interactive map.<br />
+				The blue buttons however will send another message containing a special map e.g. an in-game map.
+			</p>
+		</div>
+
+		<h3>Misc ⌚</h3>
+		<div>
+			<ul>
+				<li>The time command <code>/time</code> will display the current in-game raid time.</li>
+			</ul>
 		</div>
 	</section>
 
@@ -179,7 +191,7 @@
 
 		<iframe id="discordWidget" src="https://discord.com/widget?id=861948446910578699&theme=dark"></iframe>
 
-		<p id="updateDate">Updated 2022-03-15</p>
+		<p id="updateDate">Updated 2022-03-22</p>
 
 		<a href="#top" id="to-top" title="Back To Top">
 			<div id="to-top-transition"></div>

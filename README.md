@@ -9,7 +9,7 @@
 <p align="center">
 	<a href="LICENSE"><img src="https://badgen.net/badge/License/AGPLv3/blue" alt="AGPLv3 license" title="AGPLv3 license" /></a>
 	<a href="https://discord.com/invite/kg7VfRQ9Xw"><img src="https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label" alt="Discord Server" title="Join our Discord community!" /></a>
-	<a href="https://rat-god-website.herokuapp.com/"><img src="https://img.shields.io/website?url=https://rat-god-website.herokuapp.com/" alt="Refresh for website status" title="Website status" /></a>
+	<a href="https://rat-god-website.herokuapp.com"><img src="https://img.shields.io/website?url=https://rat-god-website.herokuapp.com" alt="Refresh for website status" title="Website status" /></a>
 </p>
 
 - - -
@@ -53,7 +53,7 @@ The revenue this project generates is by generous donations on our [Patreon site
 
 - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=274877958208&scope=bot%20applications.commands)
 - [Discord Server](https://discord.com/invite/kg7VfRQ9Xw) *<-- Highly recommend to join!*
-- [Website](https://rat-god-website.herokuapp.com/)
+- [Website](https://rat-god-website.herokuapp.com)
 - [Bot's repository](https://github.com/Froggi22/Rat-God)
 - Vote on [Top.gg](https://top.gg/bot/864572952275714059/vote)
 - [Patreon](https://www.patreon.com/Froggi22)
