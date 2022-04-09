@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap'); /* Roboto Slab */
 
 /* ========== Media =========== */
-
 /* Small screens */
 @media only screen and (max-width: 800px) {
 	.nav-small-hide {
@@ -104,7 +103,7 @@ a {
 
 /* ========== Noscript =========== */
 noscript {
-	background-color: #c22e32;
+	background-color: #C22E32;
 	width: 100%;
 	text-align: center;
 	position: fixed;
@@ -114,13 +113,8 @@ noscript {
 
 /* ========== Navigation Bar =========== */
 nav {
-	background: rgb(44,44,129);
-	background: -moz-linear-gradient(90deg, rgba(44,44,129,1) 0%, rgba(77,77,196,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(44,44,129,1) 0%, rgba(77,77,196,1) 100%);
-	background: linear-gradient(90deg, rgba(44,44,129,1) 0%, rgba(77,77,196,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c2c81",endColorstr="#4d4dc4",GradientType=1);
-
-	border-bottom: 3px solid #ffffff;
+	background: linear-gradient(to right, #2C2C81, #4D4DC4);
+	border-bottom: 3px solid white;
 	margin: 0;
 	padding: 0;
 	position: fixed;
@@ -171,12 +165,7 @@ nav ul li div {
 /* Turns the copyright symbol to copyleft */
 #copyleft {
 	display: inline-block;
-	-moz-transform: scaleX(-1);
-	-o-transform: scaleX(-1);
-	-webkit-transform: scaleX(-1);
 	transform: scaleX(-1);
-	filter: FlipH;
-	-ms-filter: FlipH;
 }
 
 /* Default links properties */
@@ -192,26 +181,14 @@ nav ul li div {
 
 /* The invite Rat God link in navbar */
 .cool-background-gold {
-	background: rgb(228,178,3);
-	background: -moz-linear-gradient(270deg, rgba(228,178,3,1) 0%, rgba(203,112,17,1) 100%);
-	background: -webkit-linear-gradient(270deg, rgba(228,178,3,1) 0%, rgba(203,112,17,1) 100%);
-	background: linear-gradient(270deg, rgba(228,178,3,1) 0%, rgba(203,112,17,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4b203",endColorstr="#cb7011",GradientType=1);
-
+	background: linear-gradient(to left, #E4B203, #CB7011);
 	font-weight: bold;
 	width: 100%;
 }
 
 /* =========== Header ============ */
 header {
-	background: rgb(227,156,26);
-	background: -moz-linear-gradient(210deg, rgba(227,156,26,1) 0%, rgba(158,75,19,1) 100%);
-	background: -webkit-linear-gradient(210deg, rgba(227,156,26,1) 0%, rgba(158,75,19,1) 100%);
-	background: linear-gradient(210deg, rgba(227,156,26,1) 0%, rgba(158,75,19,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e39c1a",endColorstr="#9e4b13",GradientType=1);
-
-	/*https://duckduckgo.com/?q=gold+sky+wallpaper&t=ffab&iar=images&iax=images&ia=images&iai=https%3A%2F%2Fjooinn.com%2Fimages%2Fgolden-sky-5.jpg*/
-	/*background-image: url("./assets/Background.jpg");*/
+	background: linear-gradient(210deg, #E39C1A, #9E4B13);
 	min-height: 500px;
 	display: grid;
 	overflow-x: hidden;
@@ -240,7 +217,7 @@ header {
 
 /* The invite button on frontpage */
 .coolBackgroundWhite, .coolBackgroundWhite:visited {
-	background: #ffffff;
+	background: white;
 	border-radius: 30px;
 	color: black;
 	font-weight: bold;
@@ -255,14 +232,16 @@ header {
 	text-decoration: underline;
 }
 
+.background-1 {
+	background: linear-gradient(to right, #151542, #0A2338);
+}
+
+.background-2 {
+	background: linear-gradient(to right, #202057, #133D60);
+}
+
 /* ========== About =========== */
 #about {
-	background: rgb(21,21,66);
-	background: -moz-linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
-	background: linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#151542",endColorstr="#0a2338",GradientType=1);
-
 	border-bottom: 2px solid white;
 	padding: 50px;
 	position: relative;
@@ -277,14 +256,6 @@ header {
 }
 
 /* ========== Features =========== */
-#features {
-	background: rgb(32,32,87);
-	background: -moz-linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);
-	background: linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#202057",endColorstr="#133d60",GradientType=1);
-}
-
 #features ul, #features ol {
 	display: inline-block;
 	text-align: left;
@@ -317,36 +288,15 @@ header {
 
 /* Highlighted code commands */
 code {
-	background-color: #282b2e;
+	background-color: #282B2E;
 	border-radius: 3px;
 	font-size: 14px;
 	line-height: 25px;
 	padding: 2px;
 }
 
-/* Highlighted codeblocks */
-.codeblock {
-	background: rgb(40,43,46);
-	background: -moz-linear-gradient(180deg, rgba(40,43,46,1) 0%, rgba(29,31,33,1) 100%);
-	background: -webkit-linear-gradient(180deg, rgba(40,43,46,1) 0%, rgba(29,31,33,1) 100%);
-	background: linear-gradient(180deg, rgba(40,43,46,1) 0%, rgba(29,31,33,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#282b2e",endColorstr="#1d1f21",GradientType=1);
-
-	border: 1px solid black;
-	border-radius: 10px;
-	font-size: 14px;
-	padding: 15px 5px;
-	width: 100%;
-}
-
 /* ========== FAQ =========== */
 #faq {
-	background: rgb(21,21,66);
-	background: -moz-linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
-	background: linear-gradient(90deg, rgba(21,21,66,1) 0%, rgba(10,35,56,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#151542",endColorstr="#0a2338",GradientType=1);
-
 	border-bottom: 2px solid white;
 	display: grid;
 	padding: 50px 0;
@@ -385,7 +335,7 @@ details {
 
 summary {
 	box-sizing: border-box;
-	background-color: #2f3a52;
+	background-color: #2F3A52;
 	border: none;
 	border-radius: 10px;
 	transition: border-radius 0.2s;
@@ -399,18 +349,16 @@ summary {
 	width: 100%;
 }
 
-summary:hover {
-	background-color: #262e41;
+summary:hover, .faq-active, .faq-answer {
+	background-color: #262E41;
 }
 
 .faq-active {
-	background-color: #262e41;
 	border-radius: 10px 10px 0 0;
 }
 
 /* Answer to questions */
 .faq-answer {
-	background-color: #262e41;
 	padding: 5px 18px;
 	border-radius: 0 0 10px 10px;
 	box-sizing: border-box;
@@ -444,14 +392,8 @@ summary:hover {
 	width: 100%;
 }
 
-/* ========== Contact Us =========== */
+/* ========== Contact Us / Get In Touch =========== */
 #contact {
-	background: rgb(32,32,87);
-	background: -moz-linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);
-	background: linear-gradient(90deg, rgba(32,32,87,1) 0%, rgba(19,61,96,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#202057",endColorstr="#133d60",GradientType=1);
-
 	width: 100%;
 	padding: 50px 0;
 	text-align: center;
@@ -495,8 +437,7 @@ summary:hover {
 
 /* Back to top anchor link */
 #to-top {
-	background-color: #c04d2a;
-	background-image: linear-gradient(90deg, #c04d2a 0%, #b68f1a 74%);
+	background: linear-gradient(to right, #C04D2A, #B68F1A);
 	position: relative;
 	overflow: hidden;
 	cursor: pointer;
@@ -526,7 +467,6 @@ summary:hover {
 	align-items: center;
 	z-index: 9;
 }
-
 
 #to-top p:hover {
 	color: black;
