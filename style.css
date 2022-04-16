@@ -133,6 +133,11 @@ nav ul li div {
 }
 
 /* ========== Misc =========== */
+h2 {
+	font-size: 30px;
+	margin-top: 0;
+}
+
 /* Default links properties */
 .default-link, .default-link:visited {
 	color: white;
@@ -190,4 +195,16 @@ code {
 	font-size: 14px;
 	line-height: 25px;
 	padding: 2px;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
 }
