@@ -24,18 +24,6 @@
 	#copyleft {
 		margin: 0;
 	}
-	header {
-		padding: 200px 0 100px 0;
-	}
-	#header-part-1 a img {
-		width: 200px;
-	}
-	#about, #features, #faq, #contact {
-		scroll-margin-top: 100px;
-	}
-	#youtubeVideo {
-		margin-bottom: 40px;
-	}
 }
 
 /* Average/large screens */
@@ -57,18 +45,6 @@
 	#copyleft {
 		margin: 0 0 0 20px;
 	}
-	header {
-		padding: 150px 0;
-	}
-	#header-part-1 a img {
-		width: 300px;
-	}
-	#about, #features, #faq, #contact {
-		scroll-margin-top: 50px;
-	}
-	#ytVideo {
-		padding-bottom: 0;
-	}
 }
 
 /* ========== Whole document =========== */
@@ -86,22 +62,10 @@ body {
 	line-height: 1.5;
 }
 
-header, #about, #features, #faq, #contact {
-	border-bottom: 2px solid white;
-	position: relative;
-	text-align: center;
-	width: auto;
-}
-
-#about, #features, #faq, #contact {
-	padding: 50px;
-}
-
 a {
 	cursor: pointer;
 }
 
-/* ========== Noscript =========== */
 noscript {
 	background-color: #C22E32;
 	width: 100%;
@@ -168,6 +132,7 @@ nav ul li div {
 	transform: scaleX(-1);
 }
 
+/* ========== Misc =========== */
 /* Default links properties */
 .default-link, .default-link:visited {
 	color: white;
@@ -186,80 +151,12 @@ nav ul li div {
 	width: 100%;
 }
 
-/* =========== Header ============ */
-header {
-	background: linear-gradient(210deg, #E39C1A, #9E4B13);
-	min-height: 500px;
-	display: grid;
-	overflow-x: hidden;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-#header-part-1 a img {
-	border: 2px ridge white;
-	border-radius: 30px;
-}
-
-/* Header section except image */
-#header-part-2 {
-	margin-top: -60px;
-}
-
-/*Rat God slogan*/
-#header-part-2 p {
-	font-family: 'Roboto Slab', serif;
-	font-size: 20px;
-	padding-bottom: 20px;
-}
-
-/* The invite button on frontpage */
-.coolBackgroundWhite, .coolBackgroundWhite:visited {
-	background: white;
-	border-radius: 30px;
-	color: black;
-	font-weight: bold;
-	margin-top: 30px;
-	margin-right: 10px;
-	padding: 15px 30px 15px 30px;
-	text-decoration: none;
-}
-
-/* White link properties on hover */
-.coolBackgroundWhite:hover {
-	text-decoration: underline;
-}
-
 .background-1 {
 	background: linear-gradient(to right, #151542, #0A2338);
 }
 
 .background-2 {
 	background: linear-gradient(to right, #202057, #133D60);
-}
-
-/* ========== About =========== */
-#about {
-	border-bottom: 2px solid white;
-	padding: 50px;
-	position: relative;
-	text-align: center;
-	width: auto;
-}
-
-#about p {
-	margin: auto;
-	max-width: 750px;
-	text-align: justify;
-}
-
-/* ========== Features =========== */
-#features ul, #features ol {
-	display: inline-block;
-	text-align: left;
-	margin-top: 0;
 }
 
 /* Gold link text */
@@ -293,215 +190,4 @@ code {
 	font-size: 14px;
 	line-height: 25px;
 	padding: 2px;
-}
-
-/* ========== FAQ =========== */
-#faq {
-	border-bottom: 2px solid white;
-	display: grid;
-	padding: 50px 0;
-	text-align: center;
-	width: 100%;
-}
-
-h2 {
-	font-size: 30px;
-	margin-top: 0;
-}
-
-#faq-container {
-	margin: auto;
-	width: 50%;
-}
-
-details[open] summary ~ * {
-	animation: sweep-in-left 0.2s ease-in-out;
-}
-
-@keyframes sweep-in-left {
-	0% {
-		filter: opacity(0);
-		transform: translateX(-10px);
-	}
-	100% {
-		filter: opacity(1);
-		transform: translateX(0);
-	}
-}
-
-details {
-	margin-bottom: 20px;
-}
-
-summary {
-	box-sizing: border-box;
-	background-color: #2F3A52;
-	border: none;
-	border-radius: 10px;
-	transition: border-radius 0.2s;
-	color: white;
-	cursor: pointer;
-	font-size: 15px;
-	font-weight: bold;
-	outline: none;
-	padding: 18px;
-	text-align: left;
-	width: 100%;
-}
-
-summary:hover, .faq-active, .faq-answer {
-	background-color: #262E41;
-}
-
-.faq-active {
-	border-radius: 10px 10px 0 0;
-}
-
-/* Answer to questions */
-.faq-answer {
-	padding: 5px 18px;
-	border-radius: 0 0 10px 10px;
-	box-sizing: border-box;
-	text-align: left;
-	width: 100%;
-	margin: 0;
-	border-top: 1px ridge white;
-}
-
-/* Div around the video answer */
-.container-center {
-	width: 100%;
-	display: grid;
-}
-
-/* Div around video answer, all children */
-.container-center * {
-	margin: 10px auto;
-}
-
-.text-align-right {
-	text-align: right;
-}
-
-/* The Youtube video */
-#youtubeVideo {
-	border: 2px solid white;
-	border-radius: 15px;
-	height: 315px;
-	max-width: 560px;
-	width: 100%;
-}
-
-/* ========== Contact Us / Get In Touch =========== */
-#contact {
-	width: 100%;
-	padding: 50px 0;
-	text-align: center;
-}
-
-#contact > a {
-	margin: 20px 50px 100px 50px;
-}
-
-#contact a img {
-	width: 40px;
-	margin-bottom: 75px;
-}
-
-/* No decoration for contact-images */
-#contact a:not(#backTop), #contact a:hover:not(#backTop), #contact a:visited:not(#backTop) {
-	text-decoration: none;
-}
-
-#discord {
-	filter: brightness(3); /* White */
-	transition: filter 0.2s ease;
-	cursor: pointer;
-}
-
-#discord:hover {
-	filter: brightness(1); /* Blue */
-	transition: filter 0.2s ease;
-}
-
-#github {
-	filter: invert(0);  /* White */
-	transition: filter 0.2s ease;
-	cursor: pointer;
-}
-
-#github:hover {
-	filter: invert(1);  /* Black */
-	transition: filter 0.2s ease;
-}
-
-/* Back to top anchor link */
-#to-top {
-	background: linear-gradient(to right, #C04D2A, #B68F1A);
-	position: relative;
-	overflow: hidden;
-	cursor: pointer;
-	display: inline-flex;
-	height: 40px;
-	width: 150px;
-	border: 2px solid #BFC0C0;
-	margin: 0;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-size: 0.8em;
-	letter-spacing: 1.5px;
-	align-items: center;
-	justify-content: center;
-	border-radius: 5px;
-	font-weight: bold;
-	color: black;
-}
-
-#to-top p {
-	display: flex;
-	transition: all 0.4s ease-out;
-	color: white;
-	width: 100%;
-	height: 100%;
-	justify-content: center;
-	align-items: center;
-	z-index: 9;
-}
-
-#to-top p:hover {
-	color: black;
-	transition: all 0.4s ease-Out;
-}
-
-#to-top-transition {
-	width: 0;
-	height: 0;
-	filter: opacity(0);
-	left: 70px;
-	top: 20px;
-	transform: rotate(0deg);
-	background: none;
-	position: absolute;
-	transition: all 0.4s ease-Out;
-}
-
-#to-top:hover #to-top-transition {
-	width: 200%;
-	height: 500%;
-	filter: opacity(1);
-	left: -70px;
-	top: -70px;
-	background: #BFC0C0;
-	transform: rotate(80deg);
-}
-
-#discordWidget {
-	border: 2px solid white;
-	max-width: 350px;
-	height: 500px;
-	border-radius: 10px;
-}
-
-#updateDate {
-	font-style: italic;
 }
