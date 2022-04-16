@@ -1,9 +1,9 @@
 "use strict"
 
-/* ===== FAQ Collapsibles ===== */
-const summary = document.getElementsByTagName("summary") // Fetch all summaries
-for (let elementnum = 0; elementnum < summary.length; elementnum++) { // Iterate through all summaries
-	summary[elementnum].addEventListener("click", () => { // Add click event listeners on each one
-		this.classList.toggle("faq-active") // Add the class "faq-active" on the clicked summary
-	});
+/* FAQ Collapsibles */
+const summary = document.getElementsByTagName("summary")
+for (let i = 0; i < summary.length; i++) {
+	summary[i].addEventListener("click", () => {
+		summary[i].classList.toggle("faq-active")
+	})
 }

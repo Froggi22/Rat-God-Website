@@ -1,34 +1,18 @@
 /* ========== Media =========== */
 /* Small screens */
 @media only screen and (max-width: 800px) {
-	header {
-		padding: 200px 0 100px 0;
-	}
-	#header-part-1 a img {
-		width: 200px;
-	}
-	#about, #features, #faq, #contact {
-		scroll-margin-top: 100px;
-	}
-	#youtubeVideo {
-		margin-bottom: 40px;
-	}
+	header { padding: 200px 0 100px; }
+	#header-part-1 a img { width: 200px; }
+	#about, #features, #faq, #contact { scroll-margin-top: 100px; }
+	#youtubeVideo { margin-bottom: 40px; }
 }
 
 /* Average/large screens */
 @media only screen and (min-width: 801px) {
-	header {
-		padding: 150px 0;
-	}
-	#header-part-1 a img {
-		width: 300px;
-	}
-	#about, #features, #faq, #contact {
-		scroll-margin-top: 50px;
-	}
-	#ytVideo {
-		padding-bottom: 0;
-	}
+	header { padding: 150px 0; }
+	#header-part-1 a img { width: 300px; }
+	#about, #features, #faq, #contact { scroll-margin-top: 50px; }
+	#ytVideo { padding-bottom: 0; }
 }
 
 /* ========== Whole page =========== */
@@ -39,20 +23,15 @@ header, #about, #features, #faq, #contact {
 	width: auto;
 }
 
-#about, #features, #faq, #contact {
-	padding: 50px;
-}
+#about, #features, #faq, #contact { padding: 50px; }
 
 /* =========== Header ============ */
 header {
-	background: linear-gradient(210deg, #E39C1A, #9E4B13);
+	background: linear-gradient(210deg, #E39C1A, #9E4B13) no-repeat fixed center;
+	background-size: cover;
 	min-height: 500px;
 	display: grid;
 	overflow-x: hidden;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 #header-part-1 a img {
@@ -61,14 +40,11 @@ header {
 }
 
 /* Header section except image */
-#header-part-2 {
-	margin-top: -60px;
-}
+#header-part-2 { margin-top: -60px; }
 
 /*Rat God slogan*/
 #header-part-2 p {
-	font-family: 'Roboto Slab', serif;
-	font-size: 20px;
+	font: 20px 'Roboto Slab', serif;
 	padding-bottom: 20px;
 }
 
@@ -78,9 +54,8 @@ header {
 	border-radius: 30px;
 	color: black;
 	font-weight: bold;
-	margin-top: 30px;
-	margin-right: 10px;
-	padding: 15px 30px 15px 30px;
+	margin-top: 30px 0 10px;
+	padding: 15px 30px;
 	text-decoration: none;
 }
 
@@ -125,9 +100,7 @@ header {
 	width: 50%;
 }
 
-details[open] summary ~ * {
-	animation: sweep-in-left 0.2s ease-in-out;
-}
+details[open] summary ~ * { animation: sweep-in-left 0.2s ease-in-out; }
 
 @keyframes sweep-in-left {
 	0% {
@@ -140,9 +113,7 @@ details[open] summary ~ * {
 	}
 }
 
-details {
-	margin-bottom: 20px;
-}
+details { margin-bottom: 20px; }
 
 summary {
 	box-sizing: border-box;
@@ -152,21 +123,16 @@ summary {
 	transition: border-radius 0.2s;
 	color: white;
 	cursor: pointer;
-	font-size: 15px;
-	font-weight: bold;
+	font: 15px bold;
 	outline: none;
 	padding: 18px;
 	text-align: left;
 	width: 100%;
 }
 
-summary:hover, .faq-active, .faq-answer {
-	background-color: #262E41;
-}
+summary:hover, .faq-active, .faq-answer { background-color: #262E41; }
 
-.faq-active {
-	border-radius: 10px 10px 0 0;
-}
+.faq-active { border-radius: 10px 10px 0 0; }
 
 /* Answer to questions */
 .faq-answer {
@@ -186,13 +152,9 @@ summary:hover, .faq-active, .faq-answer {
 }
 
 /* Div around video answer, all children */
-.container-center * {
-	margin: 10px auto;
-}
+.container-center * { margin: 10px auto; }
 
-.text-align-right {
-	text-align: right;
-}
+.text-align-right { text-align: right; }
 
 /* The Youtube video */
 #youtubeVideo {
@@ -210,9 +172,7 @@ summary:hover, .faq-active, .faq-answer {
 	text-align: center;
 }
 
-#contact > a {
-	margin: 20px 50px 100px 50px;
-}
+#contact a { margin: 20px 50px 100px; }
 
 #contact a img {
 	width: 40px;
@@ -220,14 +180,11 @@ summary:hover, .faq-active, .faq-answer {
 }
 
 /* No decoration for contact-images */
-#contact a:not(#backTop), #contact a:hover:not(#backTop), #contact a:visited:not(#backTop) {
-	text-decoration: none;
-}
+#contact a:not(#backTop), #contact a:hover:not(#backTop), #contact a:visited:not(#backTop) { text-decoration: none; }
 
 #discord {
 	filter: brightness(3); /* White */
 	transition: filter 0.2s ease;
-	cursor: pointer;
 }
 
 #discord:hover {
@@ -238,7 +195,6 @@ summary:hover, .faq-active, .faq-answer {
 #github {
 	filter: invert(0);  /* White */
 	transition: filter 0.2s ease;
-	cursor: pointer;
 }
 
 #github:hover {
@@ -251,20 +207,18 @@ summary:hover, .faq-active, .faq-answer {
 	background: linear-gradient(to right, #C04D2A, #B68F1A);
 	position: relative;
 	overflow: hidden;
-	cursor: pointer;
 	display: inline-flex;
 	height: 40px;
 	width: 150px;
 	border: 2px solid #BFC0C0;
+	border-radius: 5px;
 	margin: 0;
 	text-transform: uppercase;
 	text-decoration: none;
-	font-size: 0.8em;
+	font-size: 0.8em bold;
 	letter-spacing: 1.5px;
 	align-items: center;
 	justify-content: center;
-	border-radius: 5px;
-	font-weight: bold;
 	color: black;
 }
 
@@ -311,8 +265,4 @@ summary:hover, .faq-active, .faq-answer {
 	max-width: 350px;
 	height: 500px;
 	border-radius: 10px;
-}
-
-#updateDate {
-	font-style: italic;
 }
