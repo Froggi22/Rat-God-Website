@@ -49,10 +49,6 @@ The revenue this project generates is by generous donations on our [Patreon site
 
 We're always looking for people who can help with anything from simple spelling mistakes, icon updates, bug fixes, etc. Contributions can grant you a unique role in the Discord Server! However, please get in touch over Discord in advance to discuss suggestions, as it will greatly increase the chances of merging the Pull Request.
 
-### Prerequisites 📩
-
-- Have a browser lol
-
 ### Implementing Changes 🏗️
 
 1. Fork this repository (should be on the top right of this page).

@@ -1,7 +1,7 @@
-/* ========== Fonts =========== */
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap'); /* Roboto Slab */
 
-/* ========== Media =========== */
+/* Media */
 @media only screen and (max-width: 800px) { /* Small screens */
 	.nav-small-hide { display: none; }
 	nav ul {
@@ -30,7 +30,7 @@
 	#copyleft { margin: 0 0 0 20px; }
 }
 
-/* ========== Whole document =========== */
+/* Whole document */
 html {
 	cursor: auto;
 	min-width: 400px;
@@ -58,7 +58,7 @@ noscript {
 	padding: 5px;
 }
 
-/* ========== Navigation Bar =========== */
+/* Navigation Bar */
 nav {
 	background: linear-gradient(to right, #2C2C81, #4D4DC4);
 	border-bottom: 3px solid white;
@@ -98,7 +98,7 @@ nav ul li div { gap: 20px; }
 	transform: scaleX(-1);
 }
 
-/* ========== Misc =========== */
+/* Misc */
 .default-link, .default-link:visited {
 	color: white;
 	text-decoration: none;
