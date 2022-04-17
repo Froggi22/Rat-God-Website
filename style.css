@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap'); /* Roboto Slab */
 
 /* ========== Media =========== */
-/* Small screens */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) { /* Small screens */
 	.nav-small-hide { display: none; }
 	nav ul {
 		width: max-content;
@@ -17,8 +16,7 @@
 	#copyleft { margin: 0; }
 }
 
-/* Average/large screens */
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 801px) { /* Average/large screens */
 	nav ul {
 		width: 100%;
 		margin: auto 0;
@@ -48,6 +46,8 @@ body {
 }
 
 a { cursor: pointer; }
+h1 { font-size: 2em;}
+h2 { margin-top: 0; }
 
 noscript {
 	background-color: #C22E32;
@@ -71,7 +71,6 @@ nav {
 	display: flex;
 }
 
-/* Nav bar list */
 nav ul {
 	list-style-type: none;
 	display: flex;
@@ -82,73 +81,57 @@ nav ul {
 	margin: auto;
 }
 
-nav ul li { width: max-content; }
-
 #right-nav-li {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-end;
 }
 
+nav ul li { width: max-content; }
 nav ul li div { gap: 20px; }
-
 .left-nav-div { display: flex; }
-
 .left-nav-div * { margin: 0; }
-
 .right-nav-div * { margin: 0 10px; }
 
-/* Turns the copyright symbol to copyleft */
-#copyleft {
+#copyleft { /* Turning copyright to copyleft */
 	display: inline-block;
 	transform: scaleX(-1);
 }
 
 /* ========== Misc =========== */
-h2 { margin-top: 0; }
-
-/* Default links properties */
 .default-link, .default-link:visited {
 	color: white;
 	text-decoration: none;
 }
 
-/* Default links properties on hover */
 .default-link:hover { text-decoration: underline; }
 
-/* The invite Rat God link in navbar */
-.cool-background-gold {
+.cool-background-gold { /* Invite link in navbar */
 	background: linear-gradient(to left, #E4B203, #CB7011);
 	font-weight: bold;
 	width: 100%;
 }
 
 .background-1 { background: linear-gradient(to right, #151542, #0A2338); }
-
 .background-2 { background: linear-gradient(to right, #202057, #133D60); }
 
-/* Gold link text */
 .goldText, .goldText:visited {
 	color: #E4B203;
 	text-decoration: none;
 	font-weight: bold;
 }
 
-/* Gold link text on hover */
 .goldText:hover { text-decoration: underline; }
 
-/* White link text */
 .white-link-text, .white-link-text:visited {
 	color: white;
 	font-weight: bold;
 	text-decoration: none;
 }
 
-/* White link text on hover */
 .white-link-text:hover { text-decoration: underline; }
 
-/* Highlighted code commands */
-code {
+code { /* Highlighted code commands */
 	background-color: #282B2E;
 	border-radius: 3px;
 	font-size: 14px;
