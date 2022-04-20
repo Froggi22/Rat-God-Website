@@ -58,7 +58,7 @@ noscript {
 	padding: 5px;
 }
 
-/* Navigation Bar */
+/* Nav Bar */
 nav {
 	background: linear-gradient(to right, #2C2C81, #4D4DC4);
 	border-bottom: 3px solid white;
@@ -91,7 +91,7 @@ nav ul li { width: max-content; }
 nav ul li div { gap: 20px; }
 .left-nav-div { display: flex; }
 .left-nav-div * { margin: 0; }
-.right-nav-div * { margin: 0 10px; }
+.right-nav-div > * { margin: 0 10px; }
 
 #copyleft { /* Turning copyright to copyleft */
 	display: inline-block;
