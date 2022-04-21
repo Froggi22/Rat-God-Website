@@ -1,12 +1,11 @@
-/* Media */
-@media only screen and (max-width: 800px) { /* Small screens */
+@media only screen and (max-width: 800px) { /* Small res */
 	header { padding: 200px 0 100px; }
 	#header-part-1 a img { width: 200px; }
 	#about, #features, #faq, #contact { scroll-margin-top: 100px; }
 	#youtubeVideo { margin-bottom: 40px; }
 }
 
-@media only screen and (min-width: 801px) { /* Average/large screens */
+@media only screen and (min-width: 801px) { /* Average res */
 	header { padding: 150px 0; }
 	#header-part-1 a img { width: 300px; }
 	#about, #features, #faq, #contact { scroll-margin-top: 50px; }
@@ -15,7 +14,7 @@
 
 /* Whole page */
 header, #about, #features, #faq, #contact {
-	border-bottom: 2px solid white;
+	border-bottom: 2px solid #fff;
 	position: relative;
 	text-align: center;
 	width: auto;
@@ -24,7 +23,7 @@ header, #about, #features, #faq, #contact {
 #about, #features, #faq, #contact { padding: 50px; }
 
 header {
-	background: linear-gradient(210deg, #E39C1A, #9E4B13) no-repeat fixed center;
+	background: linear-gradient(210deg, #e39c1a, #9e4b13) no-repeat fixed center;
 	background-size: cover;
 	min-height: 500px;
 	display: grid;
@@ -32,7 +31,7 @@ header {
 }
 
 #header-part-1 a img {
-	border: 2px ridge white;
+	border: 2px ridge #fff;
 	border-radius: 30px;
 }
 
@@ -45,9 +44,9 @@ header {
 
 /* The invite button on frontpage */
 #coolBackgroundWhite, #coolBackgroundWhite:visited {
-	background: white;
+	background: #fff;
 	border-radius: 30px;
-	color: black;
+	color: #000;
 	font-weight: bold;
 	margin: 30px 0 10px;
 	padding: 15px 30px;
@@ -57,7 +56,7 @@ header {
 #coolBackgroundWhite:hover { text-decoration: underline; }
 
 #about {
-	border-bottom: 2px solid white;
+	border-bottom: 2px solid #fff;
 	padding: 50px;
 	position: relative;
 	text-align: center;
@@ -80,7 +79,7 @@ header {
 
 /* FAQ */
 #faq {
-	border-bottom: 2px solid white;
+	border-bottom: 2px solid #fff;
 	display: grid;
 	padding: 50px 0;
 	text-align: center;
@@ -107,11 +106,11 @@ details[open] summary ~ * { animation: sweep-in-left 0.2s ease-in-out; }
 
 summary {
 	box-sizing: border-box;
-	background-color: #2F3A52;
+	background-color: #2f3a52;
 	border: none;
 	border-radius: 10px;
 	transition: border-radius 0.2s;
-	color: white;
+	color: #fff;
 	cursor: pointer;
 	font-size: 15px;
 	font-weight: bold;
@@ -122,7 +121,7 @@ summary {
 }
 
 details { margin-bottom: 20px; }
-summary:hover, .faq-active, .faq-answer { background-color: #262E41; }
+summary:hover, .faq-active, .faq-answer { background-color: #262e41; }
 .faq-active { border-radius: 10px 10px 0 0; }
 
 .faq-answer {
@@ -132,7 +131,7 @@ summary:hover, .faq-active, .faq-answer { background-color: #262E41; }
 	text-align: left;
 	width: 100%;
 	margin: 0;
-	border-top: 1px ridge white;
+	border-top: 1px ridge #fff;
 }
 
 .container-center { /* Div around the video answer */
@@ -144,7 +143,7 @@ summary:hover, .faq-active, .faq-answer { background-color: #262E41; }
 .text-align-right { text-align: right; }
 
 #youtubeVideo {
-	border: 2px solid white;
+	border: 2px solid #fff;
 	border-radius: 15px;
 	height: 315px;
 	max-width: 560px;
@@ -173,13 +172,13 @@ summary:hover, .faq-active, .faq-answer { background-color: #262E41; }
 #github:hover { filter: invert(1); /* Black */ }
 
 #to-top { /* Back to top anchor link */
-	background: linear-gradient(to right, #C04D2A, #B68F1A);
+	background: linear-gradient(to right, #c04d2a, #b68f1a);
 	position: relative;
 	overflow: hidden;
 	display: inline-flex;
 	height: 40px;
 	width: 150px;
-	border: 2px solid #BFC0C0;
+	border: 2px solid #bfc0c0;
 	border-radius: 5px;
 	margin: 0;
 	text-transform: uppercase;
@@ -188,13 +187,13 @@ summary:hover, .faq-active, .faq-answer { background-color: #262E41; }
 	letter-spacing: 1.5px;
 	align-items: center;
 	justify-content: center;
-	color: black;
+	color: 000;
 }
 
 #to-top p {
 	display: flex;
 	transition: all 0.4s ease-out;
-	color: white;
+	color: #fff;
 	width: 100%;
 	height: 100%;
 	justify-content: center;
@@ -203,7 +202,7 @@ summary:hover, .faq-active, .faq-answer { background-color: #262E41; }
 }
 
 #to-top p:hover {
-	color: black;
+	color: 000;
 	transition: all 0.4s ease-Out;
 }
 
@@ -225,12 +224,12 @@ summary:hover, .faq-active, .faq-answer { background-color: #262E41; }
 	filter: opacity(1);
 	left: -70px;
 	top: -70px;
-	background: #BFC0C0;
+	background: #bfc0c0;
 	transform: rotate(80deg);
 }
 
 #discordWidget {
-	border: 2px solid white;
+	border: 2px solid #fff;
 	max-width: 350px;
 	height: 500px;
 	border-radius: 10px;

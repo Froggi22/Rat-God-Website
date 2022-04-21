@@ -1,33 +1,33 @@
-/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap'); /* Roboto Slab */
 
-/* Media */
-@media only screen and (max-width: 800px) { /* Small screens */
+@media only screen and (max-width: 800px) { /* Small res */
 	.nav-small-hide { display: none; }
 	nav ul {
 		width: max-content;
 		margin: auto;
 	}
+	#copyleft { margin: 0; }
 	noscript { top: 160px; }
 	.cool-background-gold {
 		border-radius: 30px;
 		padding: 8px 15px;
 	}
-	#copyleft { margin: 0; }
+	.legal { padding: 100px 25px; }
 }
 
-@media only screen and (min-width: 801px) { /* Average/large screens */
+@media only screen and (min-width: 801px) { /* Average res */
 	nav ul {
 		width: 100%;
 		margin: auto 0;
 	}
+	#copyleft { margin: 0 0 0 20px; }
 	noscript { top: 70px; }
 	.cool-background-gold {
 		border-radius: 30px;
 		padding: 15px 30px;
 		text-align: center;
 	}
-	#copyleft { margin: 0 0 0 20px; }
+	.legal { padding: 100px 200px; }
 }
 
 /* Whole document */
@@ -38,7 +38,7 @@ html {
 }
 
 body {
-	color: white;
+	color: #fff;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	margin: 0;
 	padding: 0;
@@ -50,7 +50,7 @@ h1 { font-size: 2em;}
 h2 { margin-top: 0; }
 
 noscript {
-	background-color: #C22E32;
+	background-color: #c22e32;
 	width: 100%;
 	text-align: center;
 	position: fixed;
@@ -60,8 +60,8 @@ noscript {
 
 /* Nav Bar */
 nav {
-	background: linear-gradient(to right, #2C2C81, #4D4DC4);
-	border-bottom: 3px solid white;
+	background: linear-gradient(to right, #2c2c81, #4d4dc4);
+	border-bottom: 3px solid #fff;
 	margin: 0;
 	padding: 0;
 	position: fixed;
@@ -89,9 +89,12 @@ nav ul {
 
 nav ul li { width: max-content; }
 nav ul li div { gap: 20px; }
-.left-nav-div { display: flex; }
 .left-nav-div * { margin: 0; }
 .right-nav-div > * { margin: 0 10px; }
+.left-nav-div {
+	display: flex;
+	margin-right: 10px;
+}
 
 #copyleft { /* Turning copyright to copyleft */
 	display: inline-block;
@@ -100,23 +103,22 @@ nav ul li div { gap: 20px; }
 
 /* Misc */
 .default-link, .default-link:visited {
-	color: white;
+	color: #fff;
 	text-decoration: none;
 }
 
 .default-link:hover { text-decoration: underline; }
 
 .cool-background-gold { /* Invite link in navbar */
-	background: linear-gradient(to left, #E4B203, #CB7011);
+	background: linear-gradient(to left, #e4b203, #cb7011);
 	font-weight: bold;
-	width: 100%;
 }
 
-.background-1 { background: linear-gradient(to right, #151542, #0A2338); }
-.background-2 { background: linear-gradient(to right, #202057, #133D60); }
+.background-1 { background: linear-gradient(to right, #151542, #0a2338); }
+.background-2 { background: linear-gradient(to right, #202057, #133d60); }
 
 .goldText, .goldText:visited {
-	color: #E4B203;
+	color: #e4b203;
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -124,7 +126,7 @@ nav ul li div { gap: 20px; }
 .goldText:hover { text-decoration: underline; }
 
 .white-link-text, .white-link-text:visited {
-	color: white;
+	color: #fff;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -132,7 +134,7 @@ nav ul li div { gap: 20px; }
 .white-link-text:hover { text-decoration: underline; }
 
 code { /* Highlighted code commands */
-	background-color: #282B2E;
+	background-color: #282b2e;
 	border-radius: 3px;
 	font-size: 14px;
 	line-height: 25px;
