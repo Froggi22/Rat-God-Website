@@ -1,45 +1,7 @@
-#page {
+body { overflow: hidden; }
+
+#section-error {
 	height: 100vh;
-	padding: 100px;
+	padding-top: 100px;
 	text-align: center;
-}
-html, body {
-	overflow: hidden;
-}
-
-#cool-button {
-	background: linear-gradient(to right, #c04d2a, #b68f1a);
-	border-radius: 5px;
-	border: 1px solid #ffffff;
-	font-size: 28px;
-	padding: 15px;
-	width: 150px;
-	cursor: pointer;
-	margin: 5px;
-	transition: all 0.5s;
-}
-
-#cool-button span {
-cursor: pointer;
-display: inline-block;
-position: relative;
-transition: 0.5s;
-}
-
-#cool-button span:after {
-content: '\00bb';
-position: absolute;
-opacity: 0;
-top: 0;
-right: -20px;
-transition: 0.5s;
-}
-
-#cool-button:hover span {
-padding-right: 25px;
-}
-
-#cool-button:hover span:after {
-opacity: 1;
-right: 0;
 }
