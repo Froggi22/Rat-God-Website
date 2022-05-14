@@ -101,6 +101,41 @@ nav ul li div { gap: 20px; }
 	transform: scaleX(-1);
 }
 
+/* Button */
+#cool-button {
+	background: linear-gradient(to right, #c04d2a, #b68f1a);
+	border-radius: 5px;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	font-size: 18px;
+	padding: 12px;
+	width: 110px;
+	cursor: pointer;
+	margin-top: 20px;
+	transition: all 0.4s;
+}
+
+#cool-button span {
+	display: inline-block;
+	position: relative;
+	transition: 0.4s;
+}
+
+#cool-button span:after {
+	content: "\00bb";
+	position: absolute;
+	opacity: 0;
+	right: -20px;
+	transition: all 0.4s;
+}
+
+#cool-button:hover span { padding-right: 25px; }
+
+#cool-button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
 /* Misc */
 .default-link, .default-link:visited {
 	color: #fff;
@@ -139,39 +174,4 @@ code { /* Highlighted code commands */
 	font-size: 14px;
 	line-height: 25px;
 	padding: 2px;
-}
-
-/* Button */
-#cool-button {
-	background: linear-gradient(to right, #c04d2a, #b68f1a);
-	border-radius: 5px;
-	border: 1px solid #ffffff;
-	color: #ffffff;
-	font-size: 18px;
-	padding: 12px;
-	width: 110px;
-	cursor: pointer;
-	margin-top: 20px;
-	transition: all 0.4s;
-}
-
-#cool-button span {
-	display: inline-block;
-	position: relative;
-	transition: 0.4s;
-}
-
-#cool-button span:after {
-	content: "\00bb";
-	position: absolute;
-	opacity: 0;
-	right: -20px;
-	transition: all 0.4s;
-}
-
-#cool-button:hover span { padding-right: 25px; }
-
-#cool-button:hover span:after {
-	opacity: 1;
-	right: 0;
 }
